@@ -183,7 +183,7 @@ ul {
 
 .aside .logo {
   position: absolute;
-  top: 35px;
+  top: 20px;
   font-size: 30px;
   text-transform: capitalize;
 }
@@ -919,6 +919,7 @@ h3.hello span {
       height: 40px;
       width: 200px;
     }
+    
   }
 
   @media (max-width: 400px) {
