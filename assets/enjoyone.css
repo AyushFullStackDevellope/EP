@@ -1,0 +1,414 @@
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slideOut {
+  animation: slideOut 0.1s ease;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+h1 {
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background: linear-gradient(0deg, #e9e900, #7bff00);
+  background-size: 200% 200%;
+  color: #000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  text-align: left;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  background: -webkit-linear-gradient(0deg, #fff, #f2ff00);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(215, 84, 84, 0);
+  font-size: 42px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.sidebar {
+  cursor: cell;
+  font-size: 11px;
+  letter-spacing: 1px;
+  background-color: rgba(211, 33, 33, 0.7);
+  color: #ff0000;
+  -webkit-align-items: center;
+  justify-content: center;
+  padding: 25px 32px;
+  -webkit-transition: 0.4s all cubic-bezier(1, 0, 0, 1);
+  width: 189px;
+  height: 100vh;
+  bottom: 0;
+  right: 0px;
+  z-index: 100;
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+}
+
+.sidebar:hover {
+  width: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgba(211, 33, 33, 0.7);
+}
+
+html {
+  box-sizing: border-box;
+  background: #f3f3f3;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+.clip {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.svg--icon {
+  width: 100%;
+  max-width: 5rem;
+  height: 100%;
+  max-height: 5rem;
+  display: block;
+  margin: 0 auto;
+  fill: currentColor;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 100px;
+  margin-right: 0px;
+  margin-left: 60px;
+}
+
+.share {
+  width: 5rem;
+  height: 5rem;
+  float: left;
+  margin: 0.5rem 1rem 0.5rem 0;
+  color: #ffffff;
+  border: 0.125rem solid #fffcfc;
+  box-shadow: 0 0 8px 0 rgba(50, 50, 50, 0.15);
+  border-radius: 50%;
+  transition: 250ms;
+}
+
+.share:last-child {
+  margin-right: 0;
+}
+
+.share:hover,
+.share:focus {
+  background: #f1f1f1;
+}
+
+.share:focus {
+  outline-color: inherit;
+}
+
+.twitter:hover,
+.twitter:focus {
+  color: #00aced;
+  box-shadow: 0 0 24px 0 #00aced;
+}
+
+.instagram:hover,
+.instagram:focus {
+  color: #ff0000;
+  box-shadow: 0 0 29px 0 #d924a6;
+}
+
+.instagram {
+  padding: 13px;
+}
+
+.whatsapp:hover,
+.whatsapp:focus {
+  color: #0c8e00;
+  box-shadow: 0 0 24px 0 #5d9d4b;
+}
+
+.whatsapp {
+  padding: 14px;
+}
+
+.linkedin:hover,
+.linkedin:focus {
+  color: #0000f8;
+  box-shadow: 0 0 24px 0 #7100e2;
+}
+
+.linkedin {
+  padding: 15px;
+}
+
+.facebook:hover,
+.facebook:focus {
+  color: #275dd3;
+  box-shadow: 0 0 24px 0 #0051ff;
+}
+
+.google:hover,
+.google:focus {
+  color: #d3ad00;
+  box-shadow: 0 0 24px 0 #0033ff;
+}
+
+.header {
+  margin-bottom: 50px;
+  margin-right: 120px;
+}
+
+.button-title-wrapper {
+  cursor: se-resize;
+  text-transform: uppercase;
+  background-color: rgba(21, 117, 115, 0.11);
+  padding: 25px 32px;
+  width: 100%;
+  white-space: nowrap;
+  bottom: 0;
+  right: 0px;
+  z-index: 100;
+  position: absolute;
+}
+
+.button-title-wrapper:hover {
+  background-color: rgba(21, 117, 115, 0.455);
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+}
+
+.bar {
+  width: 7px;
+  height: 13px;
+  margin: 0 15px;
+  border-radius: 10px;
+  animation: loading_5192 1s ease-in-out infinite;
+  background-color: aqua;
+}
+
+.bar:nth-child(1) {
+  animation-delay: 0.01s;
+}
+
+.bar:nth-child(2) {
+  animation-delay: 0.09s;
+}
+
+.bar:nth-child(3) {
+  animation-delay: 0.19s;
+}
+
+.bar:nth-child(4) {
+  animation-delay: 0.29s;
+}
+
+@keyframes loading_5192 {
+  0% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(1, 2.5);
+  }
+
+  40% {
+    transform: scale(1);
+  }
+}
+
+#background-image {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url("https://www.visor.ai/wp-content/uploads/2023/11/Visor_The-Language-of-Exceptional-Service-Navigating-Customer-Care-with-Intelligent-Chatbots-and-NLP.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #858585;
+}
+
+#background-video.loading {
+  display: none;
+}
+
+.welcome__subtitle {
+  text-align: center;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .home-and-menu-title {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  .welcome__subtitle {
+    font-size: 1rem;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 60px;
+  }
+
+  .wrapper {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .hamburger-menu {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+  }
+
+  .hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .hamburger-menu.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+.nav-toggler {
+  height: 40px;
+  width: 45px;
+  border: 1px solid var(--bg-black-50);
+  cursor: pointer;
+  position: fixed;
+  left: 300px;
+  top: 20px;
+  border-radius: 5px;
+  background: var(--bg-black-100);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.nav-toggler span {
+  height: 2px;
+  width: 18px;
+  background: var(--theme-color);
+  display: inline-block;
+  position: relative;
+}
+.nav-toggler.open span {
+  background-color: transparent;
+}
+.nav-toggler span::before {
+  content: "";
+  height: 2px;
+  width: 18px;
+  background: var(--theme-color);
+  position: absolute;
+  top: -6px;
+  left: 0;
+}
+.nav-toggler.open span::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+.nav-toggler span::after {
+  content: "";
+  height: 2px;
+  width: 18px;
+  background: var(--theme-color);
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+.nav-toggler.open span::after {
+  transform: rotate(-45deg);
+  top: 0;
+}

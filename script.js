@@ -95,3 +95,29 @@ function copySkype() {
       console.error("Failed to copy Skype ID: ", err);
     });
 }
+function toggleContent(button) {
+  const content = button.nextElementSibling;
+  const allContents = document.querySelectorAll('.additional-box-content');
+
+  allContents.forEach((boxContent) => {
+    if (boxContent !== content) {
+      boxContent.style.maxHeight = '0';
+      boxContent.style.padding = '0 15px';
+    }
+  });
+
+  if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+    content.style.maxHeight = '0';
+    content.style.padding = '0 15px';
+  } else {
+    // Calculate the height needed for the content plus additional 20px
+    const contentHeight = content.scrollHeight + 20;
+    const maxHeight = contentHeight + 'px';
+    content.style.maxHeight = maxHeight;
+    content.style.padding = '15px';
+  }
+}
+
+
+
+

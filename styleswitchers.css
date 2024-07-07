@@ -98,12 +98,12 @@
 }
 
 :root {
-  --theme-color: #ec1839;
+  --theme-color: #33c4ff;
 }
 
 /* Define the CSS variables */
 :root {
-  --theme-color: #ec1839; /* Default color */
+  --theme-color: #33c4ff; /* Default color */
 }
 
 body[data-theme="color1"] {
@@ -114,7 +114,7 @@ body[data-theme="color2"] {
   --theme-color: #33c4ff;
 }
 :root {
-  --theme-color: #ec1839;
+  --theme-color: #33c4ff;
 }
 
 /* Example usage in your CSS */
