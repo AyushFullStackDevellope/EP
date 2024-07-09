@@ -1,6 +1,6 @@
 * {
   font-family: sans-serif, Tahoma, Verdana, Geneva;
-  font-family:  Tahoma, sans-serif,Verdana, Geneva;
+  font-family: Tahoma, sans-serif, Verdana, Geneva;
 }
 
 /* Dark Mode styling */
@@ -344,7 +344,6 @@ h3.hello span {
   font-weight: 600;
   color: var(--skin-color);
   font-size: 40px;
-  font-family: "Clicker Script", cursive;
 }
 
 .typing {
@@ -1120,7 +1119,6 @@ h3.hello span {
   padding: 15px;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s;
   text-align: center;
   width: calc(20% - 30px);
   margin: 10px;
@@ -1131,7 +1129,7 @@ h3.hello span {
 }
 
 .course-level.active {
-  background: #007bff;
+  background: var(--theme-color);
   color: #fff;
 }
 
@@ -1292,34 +1290,32 @@ h3.hello span {
 :root {
   --primary-bg: blue;
   --secondary-bg: #f5f7f8;
-  --button-bg: #667bc6;
+  --button-bg: #344993;
   --text-color: #fff;
   --heading-font-size: 30px;
 }
 
 .main {
   width: 100vw;
-  height: 100vh;
+  height: 30vh;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   gap: 30px;
 }
 
 .column {
-  width: 30%;
-  height: 70%;
-  background-color: var(--primary-bg);
+  width: 45%;
+  height: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   border-radius: 10px;
 }
 
 .content {
   width: 100%;
-  height: 98%;
   border-width: 1px;
   border-style: solid;
   background-color: var(--text-color);
@@ -1344,7 +1340,6 @@ h3.hello span {
 
 @media (max-width: 450px) {
   .main {
-    background-color: brown;
     gap: 10px;
   }
 
@@ -1355,27 +1350,11 @@ h3.hello span {
   }
 }
 
-.course-levels {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+@media (max-width: 768px) {
+  .level-box {
+    flex: 0 0 100%;
+  }
 }
-
-.level-box {
-  flex: 0 0 48%;
-  background-color: var(--secondary-bg);
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  text-align: center;
-}
-
-.level-box h3 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
-
 .level-box p {
   font-size: 1em;
   color: var(--text-color);
@@ -1387,74 +1366,81 @@ h3.hello span {
   }
 }
 
-.course-levels {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.level-box {
-  flex: 0 0 48%;
-  background-color: var(--secondary-bg);
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  cursor: pointer;
+.content-1 {
+  width: 100%;
   text-align: center;
+  background-color: rgb(215, 213, 213);
 }
 
-.level-box h3 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
+h3 {
+  font-size: var(--heading-font-size);
+  color: var(--theme-color);
+  margin: 0;
 }
 
-.level-box p {
-  font-size: 1em;
+.fees {
+  font-size: 18px;
+  color: var(--text-color);
+  margin-top: 10px;
+}
+
+.details {
+  margin-top: 10px;
+  font-size: 16px;
   color: var(--text-color);
 }
 
-@media (max-width: 768px) {
-  .level-box {
-    flex: 0 0 100%;
-  }
+.cont-2 {
+  text-align: center;
 }
 
-.courses-container {
+.cont-2 button {
+  width: 10vw;
+  margin-top: 18px;
+  background-color: rgb(31, 31, 31);
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: e-resize;
+  transition: background-color 0.3s ease;
+}
+
+.cont-2 button:hover {
+  background-color: #1a5276;
+}
+
+/* .list {
   display: none;
-}
-
-.courses {
-  display: none;
-  margin-top: 20px;
-}
-
-.course-list {
   list-style: none;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 10px 0 0 0;
 }
 
-.icon-item {
-  flex: 0 0 48%;
+.list li {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 10px 0;
 }
 
-.icon-item img {
-  max-width: 60px;
-  margin-bottom: 10px;
+.list li img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+} */
+
+@media (max-width: 1024px) {
+  .column {
+    width: calc(50% - 20px);
+  }
 }
 
-.icon-item p {
-  font-size: 1em;
-  text-align: center;
-}
+@media (max-width: 768px) {
+  .column {
+    width: 100%;
+  }
 
-.course-details {
-  margin-top: 20px;
-  font-size: 1em;
+  .cont-2 button {
+    font-size: 16px;
+  }
 }

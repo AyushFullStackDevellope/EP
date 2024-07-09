@@ -97,13 +97,13 @@ function myFunction() {
   alert("Thank you for your valuable feedback ");
 }
 
-// function for search bar 
+// function for search bar
 
 function filterStudents() {
   const input = document.getElementById("searchInput").value.toLowerCase();
   const portfolioItems = document.querySelectorAll(".portfolio-item");
 
-  portfolioItems.forEach(item => {
+  portfolioItems.forEach((item) => {
     const studentName = item.getAttribute("data-student").toLowerCase();
     if (studentName.includes(input)) {
       item.style.display = "block";
@@ -114,21 +114,14 @@ function filterStudents() {
 }
 
 // Function to show courses based on level
-function showCourses(level) {
-  const courses = document.querySelectorAll('.courses');
-  courses.forEach(course => {
-    course.style.display = 'none';
-  });
-  document.getElementById(level).style.display = 'block';
-}
-
-function showDetails(phase) {
-  const details = document.getElementById(`${phase}-details`);
-  if (details.style.display === 'none') {
-    details.style.display = 'block';
+function toggleDetails(button) {
+  const details = button.parentElement.nextElementSibling;
+  if (details.style.display === "block") {
+    details.style.display = "none";
+    button.textContent = "Read More →";
   } else {
-    details.style.display = 'none';
+    details.style.display = "block";
+    button.textContent = "Read Less ←";
   }
 }
-
 
