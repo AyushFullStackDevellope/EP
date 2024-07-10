@@ -11,7 +11,7 @@ for (let i = 0; i < totalNavList; i++) {
     removeBackSection();
     for (let j = 0; j < totalNavList; j++) {
       if (navList[j].querySelector("a").classList.contains("active")) {
-        allSection[j].classList.add("back-section");
+        allSection[j]?.classList.add("back-section");
       }
       navList[j].querySelector("a").classList.remove("active");
     }
@@ -112,16 +112,49 @@ function filterStudents() {
     }
   });
 }
+function closeSlide() {
+  // Replace with your logic to close the slide
+  document.getElementById('slideContainer').style.display = 'none';
+}
 
-// Function to show courses based on level
-function toggleDetails(button) {
-  const details = button.parentElement.nextElementSibling;
-  if (details.style.display === "block") {
-    details.style.display = "none";
-    button.textContent = "Read More →";
-  } else {
-    details.style.display = "block";
-    button.textContent = "Read Less ←";
+function filterStudents() {
+  const searchInput = document.getElementById('searchInput').value.toLowerCase();
+  const portfolioItems = document.getElementById('portfolioItems').getElementsByClassName('portfolio-item');
+
+  for (let i = 0; i < portfolioItems.length; i++) {
+    const studentName = portfolioItems[i].getAttribute('data-student').toLowerCase();
+    if (studentName.includes(searchInput)) {
+      portfolioItems[i].style.display = '';
+    } else {
+      portfolioItems[i].style.display = 'none';
+    }
   }
 }
+
+function showPhase(phase) {
+  // Toggle visibility of tables and icons based on the selected phase
+  var tables = document.querySelectorAll('.phase-table');
+  var icons = document.querySelectorAll('.phase-icons');
+  
+  // Hide all tables and icons
+  tables.forEach(function(table) {
+    table.style.display = 'none';
+  });
+  icons.forEach(function(icon) {
+    icon.style.display = 'none';
+  });
+  
+  // Show the selected phase's table and icons
+  document.getElementById(phase + '-table').style.display = 'block';
+  document.getElementById(phase + '-icons').style.display = 'block';
+
+  // Scroll to the table on small devices
+  if (window.innerWidth < 768) { // Adjust the breakpoint as per your design needs
+    var tableElement = document.getElementById(phase + '-table');
+    if (tableElement) {
+      tableElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+}
+
 
