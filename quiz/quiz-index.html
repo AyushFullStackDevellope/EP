@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Enjoy Programming</title>
+    <link href="../assets/logo/logo-radius.png" rel="icon" />
+    <style>
+      .main-div {
+        width: 100vw;
+        height: 100vh;
+        background-color: #092635;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .html-div {
+        background-color: #1b4242;
+        width: 20%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+      }
+      .top-div {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .bottom-div {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .logo-style {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+      }
+      h2 {
+        font-size: 22px;
+        color: white;
+        text-align: center;
+      }
+    </style>
+    <script>
+      function onHTMLclick(type) {
+        if (type == 0) {
+          window.location.href = "./quiz/ep-quiz.html?quiz=html";
+        } else if (type == 1) {
+          window.location.href = "./quiz/ep-quiz.html?quiz=css";
+        } else {
+          window.location.href = "./quiz/ep-quiz.html?quiz=js";
+        }
+      }
+      function onGITHUBCLick() {
+        window.location.href =
+          "https://github.com/EnjoyProgrammingAdmin/html-project1";
+      }
+    </script>
+  </head>
+  <body style="margin: 0px; background-color: #1b4242">
+    <div class="main-div">
+      <div class="top-div" onclick="onHTMLclick()">
+        <img src="./assets/logo.png" class="logo-style" />
+        <h2>ENJOY PROGRAMMING</h2>
+      </div>
+      <div class="bottom-div">
+        <div class="html-div" onclick="onHTMLclick(0)">
+          <h2>HTML</h2>
+        </div>
+        <div class="html-div" onclick="onHTMLclick(1)">
+          <h2>CSS</h2>
+        </div>
+        <div class="html-div" onclick="onHTMLclick(2)">
+          <h2>JavaScript</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
