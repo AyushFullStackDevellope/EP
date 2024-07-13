@@ -3,12 +3,18 @@
   width: 100dvw;
   display: flex;
   flex-direction: row;
+  font-family:  Tahoma, sans-serif,Verdana, Geneva;
+  font-family: sans-serif, Tahoma, Verdana, Geneva;
+}
+h2{
+  font-family:  Tahoma, sans-serif,Verdana, Geneva;
+  font-family: sans-serif, Tahoma, Verdana, Geneva;
 }
 
 .left-container {
   width: 80%;
   height: 100%;
-  background-color: #1b4242;
+  background-color: #1b424200;
   display: flex;
   flex-direction: column;
 }
@@ -16,7 +22,7 @@
 .right-container {
   width: 20%;
   height: 100%;
-  background-color: #1b4242;
+  background-color: #1b424200;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,15 +38,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family:  Tahoma, sans-serif,Verdana, Geneva;
 }
 
 .display-container {
   width: 100%;
   height: 40%;
-  background-color: #1b4242;
+  background-color: #5f5f5f99;
+  color: gray;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family:  Tahoma, sans-serif,Verdana, Geneva;
+  font-family: sans-serif, Tahoma, Verdana, Geneva;
 }
 
 .left-bottom__container {
@@ -54,8 +64,7 @@
 
 .text-display {
   font-size: 40px;
-  color: white;
-  font-family: "Kode Mono", monospace;
+  color: rgb(127, 127, 127);
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
@@ -66,10 +75,9 @@
   width: 80%;
   border-radius: 20px;
   margin: 20px;
-  background-color: #9ec8b9;
+  background-color: #59595900;
   font-size: 30px;
   color: white;
-  font-family: "Kode Mono", monospace;
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;

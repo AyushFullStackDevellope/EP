@@ -10,7 +10,7 @@ let questionsArray = [];
 
 // GAME ON
 function setQuestion(qIndex) {
-  document.getElementById("container").style.backgroundColor = "#1b4242";
+  document.getElementById("container").style.backgroundColor = "rgba(141, 141, 141, 0.063)";
   resetColor();
   activateButton();
   questionIndex = qIndex;

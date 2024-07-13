@@ -656,7 +656,7 @@ h3.hello span {
   pointer-events: painted;
 }
 
-.btn-search:focus ~ .input-search {
+.btn-search:focus~.input-search {
   width: 300px;
   border-radius: 0px;
   background-color: transparent;
@@ -925,6 +925,7 @@ h3.hello span {
 }
 
 @media (max-width: 991px) {
+
   .contact .contact-info-item,
   .portfolio .portfolio-item {
     flex: 0 0 50%;
@@ -974,6 +975,7 @@ h3.hello span {
 }
 
 @media (max-width: 767px) {
+
   .contact .contact-info-item,
   .about .about-content .experience,
   .about .about-content .skills,
@@ -1040,6 +1042,7 @@ h3.hello span {
 
   /* For zooming in (larger viewports) */
   @media (max-width: 800px) and (min-width: 600px) {
+
     .contact .contact-info-item,
     .portfolio .portfolio-item {
       flex: 0 0 100%;
@@ -1109,6 +1112,7 @@ h3.hello span {
 
   /* For zooming in (larger viewports) */
   @media (max-width: 800px) and (min-width: 600px) {
+
     .contact .contact-info-item,
     .portfolio .portfolio-item {
       flex: 0 0 100%;
@@ -1142,6 +1146,7 @@ h3.hello span {
   }
 
   @media (max-width: 400px) {
+
     .contact .contact-info-item,
     .about .about-content .experience,
     .about .about-content .skills,
@@ -1268,6 +1273,7 @@ h3.hello span {
 .cont-2 button:hover {
   background-color: #2777a8;
 }
+
 /* TABLE STYLING IN COURSES SECTION */
 .table-responsive {
   width: 100%;
@@ -1372,6 +1378,7 @@ td {
   gap: 40px;
   margin-top: 5px;
 }
+
 /* Adjustments to show icons below tables */
 
 /* Styles for icons */
@@ -1403,7 +1410,8 @@ td {
 /* Adjustments for table responsiveness */
 .table-responsive {
   width: 100%;
-  overflow-x: auto; /* Enable horizontal scrolling on small screens */
+  overflow-x: auto;
+  /* Enable horizontal scrolling on small screens */
 }
 
 /* Styles for table caption */
@@ -1434,10 +1442,17 @@ td {
   font-size: 1rem;
   cursor: pointer;
   border-radius: 5px;
-
+  position: fixed;
+  /* Adjust the vertical position */
+  right: 25px;
+  /* Adjust the horizontal position */
 }
 
 .btn-info:hover {
-  background-color: var(--theme-color) 
+  background-color: var(--theme-color);
 }
-
+@media (max-width: 768px) {
+  .btn-info {
+    display: none;
+  }
+}
