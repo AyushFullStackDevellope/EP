@@ -3,12 +3,11 @@
   width: 100dvw;
   display: flex;
   flex-direction: row;
-  font-family:  Tahoma, sans-serif,Verdana, Geneva;
-  font-family: sans-serif, Tahoma, Verdana, Geneva;
+  font-family: Tahoma, sans-serif, Verdana, Geneva;
 }
-h2{
-  font-family:  Tahoma, sans-serif,Verdana, Geneva;
-  font-family: sans-serif, Tahoma, Verdana, Geneva;
+
+h2 {
+  font-family: Tahoma, sans-serif, Verdana, Geneva;
 }
 
 .left-container {
@@ -38,7 +37,6 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family:  Tahoma, sans-serif,Verdana, Geneva;
 }
 
 .display-container {
@@ -49,8 +47,6 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family:  Tahoma, sans-serif,Verdana, Geneva;
-  font-family: sans-serif, Tahoma, Verdana, Geneva;
 }
 
 .left-bottom__container {
@@ -81,4 +77,60 @@ h2{
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .left-container,
+  .right-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .score-board {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .display-container {
+    height: 30%;
+  }
+
+  .left-bottom__container {
+    height: 70%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  .answer-button {
+    width: 90%;
+    height: 70%;
+    font-size: 20px;
+  }
+
+  .text-display {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-display {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .answer-button {
+    width: 95%;
+    height: 70%;
+    font-size: 18px;
+  }
+
+  .score-board {
+    height: 15%;
+    margin: 10px auto;
+  }
 }
