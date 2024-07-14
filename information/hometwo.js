@@ -135,15 +135,15 @@ function showPhase(phase) {
   // Toggle visibility of tables and icons based on the selected phase
   var tables = document.querySelectorAll('.phase-table');
   var icons = document.querySelectorAll('.phase-icons');
-  
+
   // Hide all tables and icons
-  tables.forEach(function(table) {
+  tables.forEach(function (table) {
     table.style.display = 'none';
   });
-  icons.forEach(function(icon) {
+  icons.forEach(function (icon) {
     icon.style.display = 'none';
   });
-  
+
   // Show the selected phase's table and icons
   document.getElementById(phase + '-table').style.display = 'block';
   document.getElementById(phase + '-icons').style.display = 'block';
@@ -156,6 +156,20 @@ function showPhase(phase) {
     }
   }
 }
+
+lightbox.option({
+  'resizeDuration': 200,
+  'wrapAround': true,
+  'fadeDuration': 600,
+  'imageFadeDuration': 600,
+  'alwaysShowNavOnTouchDevices': true,
+  'disableScrolling': true,
+  'fitImagesInViewport': true
+});
+
+
+
+
 
 
 

@@ -641,8 +641,8 @@ h3.hello span {
 }
 
 .btn-search {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-style: none;
   font-size: 20px;
   font-weight: bold;
@@ -650,7 +650,7 @@ h3.hello span {
   cursor: pointer;
   border-radius: 50%;
   position: absolute;
-  right: 0px;
+  right: 5px;
   color: #ffffff;
   background-color: transparent;
   pointer-events: painted;
@@ -874,6 +874,51 @@ h3.hello span {
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
+
+.portfolio .certificate-img a:hover img {
+  transform: scale(1.05);
+}
+
+/* Lightbox2 Custom Styles */
+.lightboxOverlay {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+
+.lightbox {
+  animation: zoomIn 0.5s ease-in-out;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.lb-close {
+  background-color: transparent !important;
+  border: none !important;
+  font-size: 2rem !important;
+  color: #fff !important;
+  position: absolute !important;
+  top: 15px !important;
+  right: 15px !important;
+  cursor: pointer !important;
+}
+
+@media (max-width: 768px) {
+  .lb-close {
+    font-size: 1.5rem !important;
+    top: 10px !important;
+    right: 10px !important;
+  }
+}
+
 
 .portfolio .pictures-img img {
   width: 100%;
@@ -1278,7 +1323,9 @@ h3.hello span {
 .table-responsive {
   width: 100%;
   display: flex;
-
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
   flex-direction: column;
 }
 
@@ -1298,7 +1345,6 @@ th,
 td {
   padding: 10px;
 }
-
 
 .main {
   width: 100%;
@@ -1451,6 +1497,7 @@ td {
 .btn-info:hover {
   background-color: var(--theme-color);
 }
+
 @media (max-width: 768px) {
   .btn-info {
     display: none;
