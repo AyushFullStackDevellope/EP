@@ -1,11 +1,11 @@
 @keyframes slideOut {
   0% {
-      transform: translateX(0);
+    transform: translateX(0);
 
   }
 
   100% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
 
   }
 }
@@ -54,7 +54,7 @@ h3 {
   padding: 0;
   border: 0;
   font: inherit;
-  background: -webkit-linear-gradient(0deg, #fff, #f2ff00);
+  background: #FFF455;
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(215, 84, 84, 0);
@@ -283,15 +283,15 @@ html {
 
 @keyframes loading_5192 {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
 
   20% {
-      transform: scale(1, 2.5);
+    transform: scale(1, 2.5);
   }
 
   40% {
-      transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -386,85 +386,85 @@ html {
 
 @media (max-width: 768px) {
   .home-and-menu-title {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   h3 {
-      font-size: 1.8rem;
+    font-size: 1.8rem;
   }
 
- 
+
   .welcome__subtitle {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
 
   .sidebar {
-      width: 100%;
-      height: auto;
-      position: fixed;
-      top: 0;
-      left: 0;
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      padding-top: 60px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 60px;
   }
 
 
   .wrapper {
-      margin: 0;
-      padding: 1rem;
+    margin: 0;
+    padding: 1rem;
   }
 
- 
+
   .hamburger-menu {
-      display: block;
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 1000;
-      cursor: pointer;
-      width: 30px;
-      height: 24px;
-      background: transparent;
-      padding: 0;
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    padding: 0;
   }
 
   .hamburger-menu .bar {
-      width: 100%;
-      height: 3px;
-      background-color: #f1da2d;
-      display: block;
-      position: absolute;
-      left: 0;
-      transition: transform 0.3s ease, opacity 0.3s ease;
+    width: 100%;
+    height: 3px;
+    background-color: #f1da2d;
+    display: block;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
   .hamburger-menu .bar:nth-child(1) {
-      top: 0;
+    top: 0;
   }
 
   .hamburger-menu .bar:nth-child(2) {
-      top: 50%;
-      transform: translateY(-50%);
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .hamburger-menu .bar:nth-child(3) {
-      bottom: 0;
+    bottom: 0;
   }
 
   .hamburger-menu.open .bar:nth-child(1) {
-      transform: translateY(10px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
   }
 
   .hamburger-menu.open .bar:nth-child(2) {
-      opacity: 0;
+    opacity: 0;
   }
 
   .hamburger-menu.open .bar:nth-child(3) {
-      transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
   }
 }
 
@@ -491,7 +491,7 @@ h3 {
 
 .contact-btn {
   background-color: #4CAF50;
-;
+  ;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -499,13 +499,13 @@ h3 {
   width: 100%;
 
   transition: background-color 0.3s ease, transform 0.3s ease;
-  
+
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  
+
   border-radius: 5px;
- 
+
   max-width: 300px;
- 
+
   font-size: 16px;
 
 }
@@ -522,15 +522,15 @@ h3 {
 
 @media (max-width: 768px) {
   .contact-btn {
-      font-size: 14px;
-  
+    font-size: 14px;
+
   }
 }
 
 
 .collapsible-content {
   padding: 0 10px;
- 
+
   display: flex;
   overflow: hidden;
   background-color: #f1f1f15b;
@@ -545,22 +545,15 @@ h3 {
   font-family: sans-serif, Tahoma, Verdana, Geneva;
   font-weight: 400;
   font-style: normal;
-  margin-top: 100px;  /* Keeping this as it was */
+  margin-top: 100px;
+  /* Keeping this as it was */
   font-size: 2.5rem;
   letter-spacing: 1px;
   color: #2c3e50;
-  background: linear-gradient(135deg, yellow 0%, yellow 100%);
+  background: #EB5B00;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  position: relative;
   transition: all 0.3s ease;
-}
-
-.logo-name:hover {
-  color: #939f0d;
-  background: none;
-  -webkit-text-fill-color: #9f9d0d;
-  letter-spacing: 2px;
 }
 
 .logo-name::after {
@@ -580,7 +573,8 @@ h3 {
 }
 
 .logo-image {
-  margin-top: 50px;  /* Adding this to move the image down */
+  margin-top: 50px;
+  /* Adding this to move the image down */
 }
 
 
@@ -601,6 +595,7 @@ h3 {
   margin-bottom: 0;
   margin-top: 120px;
 }
+
 .explore-more {
   cursor: pointer;
   font-size: 16px;
@@ -611,7 +606,7 @@ h3 {
   border: none;
   border-radius: 5px;
   position: fixed;
-  bottom: 20px; 
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -623,19 +618,19 @@ h3 {
 
 @media (max-width: 768px) {
   .clickme-container {
-      padding: 10px;
+    padding: 10px;
   }
 
   .clickme-image {
-      max-width: 80%;
-      margin-top: 185px;
-      margin-bottom: 0; 
+    max-width: 80%;
+    margin-top: 185px;
+    margin-bottom: 0;
   }
 
   .explore-more {
-      font-size: 14px;
-      padding: 8px 16px;
-      margin-top: 0; 
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-top: 0;
   }
 }
 
@@ -645,7 +640,8 @@ h1 {
   font-weight: 700;
   font-style: normal;
 }
-h2{
+
+h2 {
   font-family: sans-serif, Tahoma, Verdana, Geneva;
   font-optical-sizing: auto;
   font-weight: 400;
