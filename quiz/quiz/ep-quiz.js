@@ -1,5 +1,6 @@
 import { setHTMLquestions } from "../questions/html-quiz.js";
 import { setCSSQuestions } from "../questions/css-quiz.js";
+import { setJSQuestions } from "../questions/js-quiz.js";
 
 let questionIndex = 0;
 let positiveScore = 0;
@@ -53,7 +54,7 @@ function onAnswerClick(
     coloringButtons(correctAnswerButton, buttonClick);
     setTimeout(() => {
       setQuestion(nextQuestion);
-    }, 3000);
+    }, 2000);
   } else {
     negativeScore += 1;
     document.getElementById("text-display").innerHTML =
@@ -62,7 +63,7 @@ function onAnswerClick(
     coloringButtons(correctAnswerButton, buttonClick);
     setTimeout(() => {
       setQuestion(nextQuestion);
-    }, 3000);
+    }, 2000);
   }
   showScore();
 }
@@ -131,7 +132,8 @@ window.onload = function () {
   dostart();
 };
 // hidden
-function dostart() {
+function dostart() {``
+  
   resetColor();
   setQuestion(0);
 }
@@ -205,7 +207,9 @@ function initializeQuestions() {
 
   if (quizType == "html") {
     questionsArray = setHTMLquestions();
-  } else {
+  } else if (quizType == "js") {
+    questionsArray = setJSQuestions();
+  }else {
     questionsArray = setCSSQuestions();
   }
 

@@ -1,4 +1,4 @@
-let cssQuestionsArray = [];
+let jsQuestionsArray = [];
 
 function createQuestion(question, a, b, c, d, answer) {
   let object = {
@@ -9,44 +9,44 @@ function createQuestion(question, a, b, c, d, answer) {
     optionD: d,
     answer: answer,
   };
-  cssQuestionsArray.push(object);
+  jsQuestionsArray.push(object);
 }
 
-function addFirstFiveQuestion() {
+function addOnetoFiveQuestions() {
   //FIrst Question
   createQuestion(
     "CSS HTML stands for?",
-    "Hyper Text Marking Language",
-    "Hypen Text Markup Language",
-    "Hyper Text Markup Language",
-    "Hyperlinks and Text Markup Language",
+    "A) Hyper Text Marking Language",
+    "B) Hypen Text Markup Language",
+    "C) Hyper Text Markup Language",
+    "D) Hyperlinks and Text Markup Language",
     3
   );
   //Second Question
   createQuestion(
     "CSS What is the correct HTML element for inserting a line break?",
-    "lb",
-    "break",
-    "br",
-    "linebreak",
+    "A) lb",
+    "B) break",
+    "C) br",
+    "D) linebreak",
     3
   );
 
   //Third Question
   createQuestion(
     "CSS What is the correct HTML element for inserting a horizontal rule?",
-    "hr",
-    "line",
-    "rule",
-    "hline",
+    "A) hr",
+    "B) line",
+    "C) rule",
+    "D) hline",
     1
   );
 }
 
-function setCSSQuestions() {
-  addFirstFiveQuestion();
+function setJSQuestions() {
+  addOnetoFiveQuestions();
 
-  return cssQuestionsArray;
+  return jsQuestionsArray;
 }
 
-export { setCSSQuestions };
+export { setJSQuestions };

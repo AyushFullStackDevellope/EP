@@ -16,19 +16,19 @@ function addFirstFiveQuestion() {
   //FIrst Question
   createQuestion(
     "HTML stands for?",
-    "A) Hyper Text Marking Language",
-    "B) Hypen Text Markup Language",
-    "C) Hyper Text Markup Language",
-    "D) Hyperlinks and Text Markup Language",
+    "Hyper Text Marking Language",
+    "Hypen Text Markup Language",
+    "Hyper Text Markup Language",
+    "Hyperlinks and Text Markup Language",
     3
   );
   //Second Question
   createQuestion(
     "What is the correct HTML element for inserting a line break?",
-    "A) lb",
-    "B) break",
-    "C) br",
-    "D) linebreak",
+    "lb",
+    "break",
+    "br",
+    "linebreak",
     3
   );
 
