@@ -14,6 +14,8 @@ body {
 
 .header-container .logo {
   width: 150px;
+  width: 150px;
+  margin: 0 auto;
 }
 
 .back-button {
@@ -25,6 +27,7 @@ body {
   font-size: 16px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
 
 .back-button i {
   margin-right: 8px;
@@ -123,24 +126,26 @@ body {
     margin-top: 20px;
     margin-left: 20px;
   }
+
   .section-title h2 {
     font-size: 25px;
     margin: 0%;
   }
 }
+
 /* Fade-in animation */
 @keyframes fadeIn {
   from {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
+
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .fade-in {
   animation: fadeIn 1s ease-out;
 }
-
