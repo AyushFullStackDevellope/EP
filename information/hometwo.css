@@ -392,6 +392,40 @@ h3.hello span {
   height: 400px;
 }
 
+.contact-us {
+  margin-top: 20px;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s;
+  color: var(--theme-color);
+}
+
+.contact-link i {
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+.contact-link:hover {
+  color: #a4a4a4;
+  /* Change to your theme's primary color */
+}
+
+/* Ensure proper padding and font-family-secondary class consistency */
+.font-family-secondary {
+  font-family: 'Your Secondary Font', sans-serif;
+}
+
+/* Add padding class */
+.padd-15 {
+  padding: 15px;
+}
+
 /* about */
 .about .about-content {
   flex: 0 0 100%;
@@ -628,7 +662,7 @@ h3.hello span {
   outline: none;
   border-radius: 25px;
   transition: all 0.5s ease-in-out;
-  background-color: var(--theme-color);
+  background-color: rgba(128, 128, 128, 0);
   padding-right: 40px;
   color: #fff;
 }
@@ -1262,6 +1296,7 @@ h3.hello span {
   gap: 10px;
   /* Adjusted gap between columns */
   justify-content: space-between;
+  margin: 18px;
 }
 
 .column {
@@ -1351,6 +1386,7 @@ td {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-left: 18px;
 
 }
 
@@ -1478,6 +1514,10 @@ td {
 .table th.text-start,
 .table td.text-start {
   text-align: left;
+}
+
+.container-certificate {
+  margin-left: 15px;
 }
 
 .btn-info {
