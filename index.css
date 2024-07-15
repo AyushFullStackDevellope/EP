@@ -556,12 +556,6 @@ h3 {
   transition: all 0.3s ease;
 }
 
-.logo-name:hover {
-  color: #939f0d;
-  background: none;
-  -webkit-text-fill-color: #9f9d0d;
-  letter-spacing: 2px;
-}
 
 .logo-name::after {
   content: "";
