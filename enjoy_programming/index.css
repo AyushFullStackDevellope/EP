@@ -1,19 +1,15 @@
 @keyframes slideOut {
   0% {
     transform: translateX(0);
-
   }
 
   100% {
     transform: translateX(-100%);
-
   }
 }
 
-
 .slideOut {
   animation: slideOut 0.1s ease;
-
 }
 
 #background-video {
@@ -26,9 +22,7 @@
   top: 0;
   bottom: 0;
   z-index: -1;
-
 }
-
 
 h1 {
   padding: 0;
@@ -48,13 +42,12 @@ h1 {
   display: block;
 }
 
-
 h3 {
   margin: 0;
   padding: 0;
   border: 0;
   font: inherit;
-  background: #FFF455;
+  background: #fff455;
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(215, 84, 84, 0);
@@ -97,13 +90,11 @@ html {
   overflow-y: hidden;
 }
 
-
 *,
 *:after,
 *:before {
   box-sizing: inherit;
 }
-
 
 .clip {
   border: 0;
@@ -116,7 +107,6 @@ html {
   width: 1px;
 }
 
-
 .svg--icon {
   width: 100%;
   max-width: 5rem;
@@ -126,7 +116,6 @@ html {
   margin: 0 auto;
   fill: currentColor;
 }
-
 
 .wrapper {
   width: 100%;
@@ -158,7 +147,6 @@ html {
   margin-right: 0;
 }
 
-
 .share:hover,
 .share:focus {
   background: #f1f1f1;
@@ -167,7 +155,6 @@ html {
 .share:focus {
   outline-color: inherit;
 }
-
 
 .twitter:hover,
 .twitter:focus {
@@ -201,11 +188,9 @@ html {
   box-shadow: 0 0 24px 0 #7100e2;
 }
 
-
 .linkedin {
   padding: 15px;
 }
-
 
 .facebook:hover,
 .facebook:focus {
@@ -213,19 +198,16 @@ html {
   box-shadow: 0 0 24px 0 #0051ff;
 }
 
-
 .google:hover,
 .google:focus {
   color: #d3ad00;
   box-shadow: 0 0 24px 0 #0033ff;
 }
 
-
 .header {
   margin-bottom: 50px;
   margin-right: 120px;
 }
-
 
 .button-title-wrapper {
   cursor: se-resize;
@@ -240,17 +222,14 @@ html {
   position: absolute;
 }
 
-
 .button-title-wrapper:hover {
   background-color: rgba(21, 117, 115, 0.455);
 }
-
 
 .loader {
   display: flex;
   justify-content: center;
 }
-
 
 .bar {
   width: 7px;
@@ -261,21 +240,17 @@ html {
   background-color: aqua;
 }
 
-
 .bar:nth-child(1) {
   animation-delay: 0.01s;
 }
-
 
 .bar:nth-child(2) {
   animation-delay: 0.09s;
 }
 
-
 .bar:nth-child(3) {
   animation-delay: 0.19s;
 }
-
 
 .bar:nth-child(4) {
   animation-delay: 0.29s;
@@ -294,7 +269,6 @@ html {
     transform: scale(1);
   }
 }
-
 
 #background-image {
   width: 100vw;
@@ -317,14 +291,12 @@ html {
   display: none;
 }
 
-
 .welcome__subtitle {
   text-align: center;
   font-style: italic;
   color: #ffffff;
   font-size: 1.5rem;
 }
-
 
 .hamburger-menu {
   display: none;
@@ -383,7 +355,6 @@ html {
   transform: rotate(-135deg);
 }
 
-
 @media (max-width: 768px) {
   .home-and-menu-title {
     font-size: 1.5rem;
@@ -393,11 +364,9 @@ html {
     font-size: 1.8rem;
   }
 
-
   .welcome__subtitle {
     font-size: 1rem;
   }
-
 
   .sidebar {
     width: 100%;
@@ -412,12 +381,10 @@ html {
     padding-top: 60px;
   }
 
-
   .wrapper {
     margin: 0;
     padding: 1rem;
   }
-
 
   .hamburger-menu {
     display: block;
@@ -468,9 +435,7 @@ html {
   }
 }
 
-
 h1 {
-
   font-weight: 700;
 
   font-family: sans-serif, Tahoma, Verdana, Geneva;
@@ -480,7 +445,6 @@ h1 {
 }
 
 h3 {
-
   font-weight: 400;
 
   font-family: sans-serif, Tahoma, Verdana, Geneva;
@@ -490,8 +454,7 @@ h3 {
 }
 
 .contact-btn {
-  background-color: #4CAF50;
-  ;
+  background-color: #4caf50;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -507,7 +470,6 @@ h3 {
   max-width: 300px;
 
   font-size: 16px;
-
 }
 
 .contact-btn:hover,
@@ -517,16 +479,13 @@ h3 {
   transform: translateY(-2px);
 
   outline: none;
-
 }
 
 @media (max-width: 768px) {
   .contact-btn {
     font-size: 14px;
-
   }
 }
-
 
 .collapsible-content {
   padding: 0 10px;
@@ -535,11 +494,7 @@ h3 {
   overflow: hidden;
   background-color: #f1f1f15b;
   background-size: cover;
-
 }
-
-
-
 
 .logo-name {
   font-family: sans-serif, Tahoma, Verdana, Geneva;
@@ -550,12 +505,11 @@ h3 {
   font-size: 2.5rem;
   letter-spacing: 1px;
   color: #2c3e50;
-  background: #EB5B00;
+  background: #eb5b00;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease;
 }
-
 
 .logo-name::after {
   content: "";
@@ -578,7 +532,6 @@ h3 {
   /* Adding this to move the image down */
 }
 
-
 .clickme-container {
   display: flex;
   flex-direction: column;
@@ -594,7 +547,6 @@ h3 {
   max-width: 100%;
   height: 230px;
   margin-bottom: 0;
-
 }
 
 .explore-more {
@@ -612,39 +564,54 @@ h3 {
   transform: translateX(-50%);
 }
 
-
 .explore-more:hover {
   background-color: #151b20b1;
 }
 
 @media (max-width: 768px) {
-  .clickme-container {
-    padding: 10px;
+  .sidebar {
+    display: none;
   }
 
-  .clickme-image {
-    max-width: 80%;
-    margin-top: 185px;
-    margin-bottom: 0;
-  }
-
-  .explore-more {
-    font-size: 14px;
-    padding: 8px 16px;
-    margin-top: 0;
+  .hamburger-menu {
+    display: block;
   }
 }
 
-h1 {
-  font-family: sans-serif, Tahoma, Verdana, Geneva;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+@media (max-width: 1024px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .header {
+    margin-right: 0;
+  }
 }
 
-h2 {
-  font-family: sans-serif, Tahoma, Verdana, Geneva;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .share {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .button-title-wrapper {
+    padding: 15px 20px;
+  }
 }
+
