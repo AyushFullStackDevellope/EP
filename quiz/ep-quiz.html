@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ENJOY PROGRAMMING</title>
+  <link href="./assets/images/logo.png" rel="icon" />
+  <link rel="stylesheet" href="ep-quizz.css" />
+  <script type="module" src="ep-quiz.js"></script>
+  <script type="JavaScript" src="ep-quiz.js"></script>
+</head>
+
+<body style="margin: 0;">
+  <!-- display -->
+  <div class="main-container" id="main-body">
+    <div class="left-container" id="left-containerr">
+      <div class="display-container" id="container">
+        <h1 id="text-display" class="text-display">Loading</h1>
+      </div>
+
+      <!-- buttons -->
+      <div class="left-bottom__container">
+        <button class="answer-button" id="answer-one" onclick="answerButtonClicked('1')"></button>
+        <button class="answer-button" id="answer-two" onclick="answerButtonClicked('2')"></button>
+        <button class="answer-button" id="answer-three" onclick="answerButtonClicked('3')"></button>
+        <button class="answer-button" id="answer-four" onclick="answerButtonClicked('4')"></button>
+      </div>
+    </div>
+
+    <div class="right-container">
+      <div class="score-board" id="container" style="background-color: #092635">
+        <h1 id="question-number" class="text-display">0</h1>
+      </div>
+      <div class="score-board" id="container" style="background-color: #65b741">
+        <h1 id="score-one" class="text-display">0</h1>
+      </div>
+      <div class="score-board" id="container" style="background-color: #ef4040">
+        <h1 id="score-two" class="text-display">0</h1>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,6 +1,6 @@
-import { setHTMLquestions } from "../questions/html-quiz.js";
-import { setCSSQuestions } from "../questions/css-quiz.js";
-import { setJSQuestions } from "../questions/js-quiz.js";
+import { setHTMLquestions } from "../questions/html-questions.js";
+import { setCSSQuestions } from "../questions/css-questions.js";
+import { setJSQuestions } from "../questions/js-questions.js";
 
 let questionIndex = 0;
 let positiveScore = 0;
