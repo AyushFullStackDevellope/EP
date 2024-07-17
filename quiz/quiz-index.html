@@ -42,9 +42,14 @@
     }
 
     .icon {
-      width: 40px;
-      /* Adjust icon size as needed */
-      height: 40px;
+      width: 45px;
+      height: 45px;
+      margin-top: 10px;
+    }
+
+    .icon-css {
+      width: 55px;
+      height: 55px;
       margin-top: 10px;
     }
 
@@ -70,6 +75,7 @@
       width: 100px;
       height: 100px;
       margin: 20px;
+      border-radius: 50%;
     }
 
     h2 {
@@ -113,20 +119,20 @@
 <body style="margin: 0px; background-color: #1b424200">
   <div class="main-div">
     <div class="top-div font-family-primary" onclick="onHTMLclick()">
-      <img src="./assets/logo.png" class="logo-style" />
+      <img src="../assets/logo/resized-logo.jpeg" class="logo-style" />
       <h2>ENJOY PROGRAMMING</h2>
     </div>
     <div class="bottom-div font-family-primary">
       <div class="html-div" onclick="onHTMLclick(0)">
-        <img src="../assets/images/icons/html-lang.png" class="icon" alt="HTML Icon" />
+        <img src="./assets/html-icon.png" class="icon" alt="HTML Icon" />
         <h2>HTML</h2>
       </div>
       <div class="html-div" onclick="onHTMLclick(1)">
-        <img src="../assets/images/icons/css-lang.png" class="icon" alt="CSS Icon" />
+        <img src="./assets/css-logo-two.png" class="icon-css" alt="CSS Icon" />
         <h2>CSS</h2>
       </div>
       <div class="html-div" onclick="onHTMLclick(2)">
-        <img src="../assets/images/icons/js-lang.png" class="icon" alt="JavaScript Icon" />
+        <img src="./assets/js-icon.png" class="icon" alt="JavaScript Icon" />
         <h2>JavaScript</h2>
       </div>
     </div>

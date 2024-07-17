@@ -98,10 +98,10 @@ function endScreen() {
 }
 
 function resetColor() {
-  document.getElementById("answer-one").style.backgroundColor = "#9ec8b9";
-  document.getElementById("answer-two").style.backgroundColor = "#9ec8b9";
-  document.getElementById("answer-three").style.backgroundColor = "#9ec8b9";
-  document.getElementById("answer-four").style.backgroundColor = "#9ec8b9";
+  document.getElementById("answer-one").style.backgroundColor = "#434141";
+  document.getElementById("answer-two").style.backgroundColor = "#434141";
+  document.getElementById("answer-three").style.backgroundColor = "#434141";
+  document.getElementById("answer-four").style.backgroundColor = "#434141";
 }
 function disableButton() {
   document.getElementById("answer-one").disabled = true;
