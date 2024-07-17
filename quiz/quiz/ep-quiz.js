@@ -135,7 +135,7 @@ window.onload = function () {
 function dostart() {``
   
   resetColor();
-  setQuestion(0);
+  setQuestion(58);
 }
 
 function getAllUrlParams(url) {

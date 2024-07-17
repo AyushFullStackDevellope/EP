@@ -509,7 +509,7 @@ let htmlQuestionsArray = [
     "optionB": "Tim Berners-Lee",
     "optionC": "Bill Gates",
     "optionD": "Mark Zuckerberg",
-    "answer": "4"
+    "answer": "2"
   },
   {
     "type": "HTML",

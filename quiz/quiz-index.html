@@ -4,6 +4,9 @@
 <head>
   <title>Enjoy Programming</title>
   <link href="../assets/logo/logo-radius.png" rel="icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-5AZdO4K8XmtNzXZGhXYmC/Tb0mQm67X7Dh7QKXv6ej3qLJgNpZ4rCkS6oRanf5cj6eOefA1bZ2ewzaKBiV5wTw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../helper/styleswitchers.css">
   <style>
     .main-div {
@@ -23,20 +26,31 @@
       width: 20%;
       height: 20%;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       font-family: sans-serif, Tahoma, Verdana, Geneva;
-      margin: 20px;
+      margin: 10px;
+      transition: transform 0.3s ease;
     }
 
     .html-div:hover {
       background-color: #393939;
       border: solid #2196f3;
+      transform: translateY(-5px);
+      /* Moves the button up by 5px on hover */
+    }
+
+    .icon {
+      width: 40px;
+      /* Adjust icon size as needed */
+      height: 40px;
+      margin-top: 10px;
     }
 
     .top-div {
       width: 100%;
-      height: 30%;
+      height: 25%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -45,7 +59,7 @@
 
     .bottom-div {
       width: 100%;
-      height: 70%;
+      height: 65%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -66,9 +80,16 @@
     }
 
     @media (max-width: 480px) {
-      .html-div{
+      .html-div {
         width: 55%;
-        height: 10%;
+        height: 15%;
+      }
+
+      .icon {
+        width: 30px;
+        /* Adjust icon size for mobile */
+        height: 30px;
+        margin-top: 20px;
       }
     }
   </style>
@@ -97,12 +118,15 @@
     </div>
     <div class="bottom-div font-family-primary">
       <div class="html-div" onclick="onHTMLclick(0)">
+        <img src="../assets/images/icons/html-lang.png" class="icon" alt="HTML Icon" />
         <h2>HTML</h2>
       </div>
       <div class="html-div" onclick="onHTMLclick(1)">
+        <img src="../assets/images/icons/css-lang.png" class="icon" alt="CSS Icon" />
         <h2>CSS</h2>
       </div>
       <div class="html-div" onclick="onHTMLclick(2)">
+        <img src="../assets/images/icons/js-lang.png" class="icon" alt="JavaScript Icon" />
         <h2>JavaScript</h2>
       </div>
     </div>
