@@ -445,9 +445,9 @@ let htmlQuestionsArray = [
     "type": "HTML",
     "question_no": "45",
     "question": "Which of the following tag is used to add rows in the table?",
-    "optionA": "td> and </td>",
-    "optionB": "th> and </th>",
-    "optionC": "tr> and </tr>",
+    "optionA": "td> and /td>",
+    "optionB": "th> and /th>",
+    "optionC": "tr> and /tr>",
     "optionD": "None of the above",
     "answer": "3"
   },
@@ -615,10 +615,10 @@ let htmlQuestionsArray = [
     "type": "HTML",
     "question_no": "62",
     "question": "Which early HTML feature was deprecated in HTML 4.01 and removed in HTML5?",
-    "optionA": "<frame>",
-    "optionB": "<table>",
-    "optionC": "<font>",
-    "optionD": "<img>",
+    "optionA": "frame>",
+    "optionB": "table>",
+    "optionC": "font>",
+    "optionD": "img>",
     "answer": "3"
   },
   {
@@ -705,10 +705,10 @@ let htmlQuestionsArray = [
     "type": "HTML",
     "question_no": "71",
     "question": "Which HTML5 element is used to define a slider control for input?",
-    "optionA": "<input type=\"slider\">",
-    "optionB": "<input type=\"range\">",
-    "optionC": "<slider>",
-    "optionD": "<range>",
+    "optionA": "input type=\"slider\">",
+    "optionB": "input type=\"range\">",
+    "optionC": "slider>",
+    "optionD": "range>",
     "answer": "2"
   },
   {
@@ -827,7 +827,7 @@ let htmlQuestionsArray = [
     "question": "What are HTML5 APIs, and how do they extend the capabilities of HTML?",
     "optionA": "HTML5 APIs are new HTML elements introduced in HTML5.",
     "optionB": "HTML5 APIs are a set of interfaces allowing web developers to interact with certain functionalities like geolocation, local storage, and canvas.",
-    "optionC": " HTML5 APIs are used to create animations in HTML documents.",
+    "optionC": "HTML5 APIs are used to create animations in HTML documents.",
     "optionD": "HTML5 APIs are used primarily for form validation",
     "answer": "2"
   },

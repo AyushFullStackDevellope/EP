@@ -92,10 +92,6 @@ function toggleContent(button) {
     content.style.padding = "15px";
   }
 }
-// Function for feedback alert
-function myFunction() {
-  alert("Thank you for your valuable feedback ");
-}
 
 // function for search bar
 

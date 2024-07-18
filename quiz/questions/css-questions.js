@@ -13,10 +13,10 @@ let cssQuestionsArray = [
       "type": "CSS",
       "question_no": "2",
       "question": "What is the correct HTML for referring to an external style sheet?",
-      "optionA": "<stylesheet>mystyle.css</stylesheet>",
-      "optionB": "<style src=\"mystyle.css>\"",
-      "optionC": "<link rel=\"stylesheet\" type= \"text/css\" href=\"mystyle.css\">",
-      "optionD": "<link href=\"mystyle.css\" rel=\"stylesheet\" type= \"text/css\">",
+      "optionA": "stylesheet>mystyle.css</stylesheet>",
+      "optionB": "style src=\"mystyle.css>\"",
+      "optionC": "link rel=\"stylesheet\" type= \"text/css\" href=\"mystyle.css\">",
+      "optionD": "link href=\"mystyle.css\" rel=\"stylesheet\" type= \"text/css\">",
       "answer": "3"
     },
     {
@@ -33,10 +33,10 @@ let cssQuestionsArray = [
       "type": "CSS",
       "question_no": "4",
       "question": "Which HTML tag is used to define an internal style sheet?",
-      "optionA": "<css>",
-      "optionB": "<script>",
-      "optionC": "<style>",
-      "optionD": "<head>",
+      "optionA": "css>",
+      "optionB": "script>",
+      "optionC": "style>",
+      "optionD": "head>",
       "answer": "3"
     },
     {
@@ -113,8 +113,8 @@ let cssQuestionsArray = [
       "type": "CSS",
       "question_no": "12",
       "question": "What is the correct CSS syntax for making all the <p> elements bold?",
-      "optionA": "<p style=\"font-size;bold;\">",
-      "optionB": "<p style=\"text-size;bold;\">",
+      "optionA": "p style=\"font-size;bold;\">",
+      "optionB": "p style=\"text-size;bold;\">",
       "optionC": "P{text-size:bold;}",
       "optionD": "P{font-weight:bold;}",
       "answer": "4"
@@ -371,10 +371,10 @@ let cssQuestionsArray = [
       "type": "CSS",
       "question_no": "38",
       "question": "Which of the following element is used within the table element to define a caption?",
-      "optionA": "<tablecaption>",
-      "optionB": "<caption>",
-      "optionC": "<table-cap>",
-      "optionD": "<table-caption>",
+      "optionA": "tablecaption>",
+      "optionB": "caption>",
+      "optionC": "table-cap>",
+      "optionD": "table-caption>",
       "answer": "2"
     },
     {
@@ -721,10 +721,10 @@ let cssQuestionsArray = [
       "type": "CSS",
       "question_no": "74",
       "question": "When was CSS first proposed?\n\n\n\n\n",
-      "optionA": "A) 1992",
-      "optionB": "B) 1994",
-      "optionC": "C) 1996",
-      "optionD": "D) 1998",
+      "optionA": " 1992",
+      "optionB": " 1994",
+      "optionC": " 1996",
+      "optionD": " 1998",
       "answer": "2"
     },
     {
@@ -732,8 +732,8 @@ let cssQuestionsArray = [
       "question_no": "75",
       "question": "Who is considered the father of CSS?",
       "optionA": "Tim Berners-Lee",
-      "optionB": "B) Håkon Wium Lie",
-      "optionC": "C) Brendan Eich\n",
+      "optionB": " Håkon Wium Lie",
+      "optionC": " Brendan Eich\n",
       "optionD": " Marc Andreessen\n",
       "answer": "2"
     },
