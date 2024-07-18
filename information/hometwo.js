@@ -154,17 +154,28 @@ function togglePhase(phase) {
   });
 
   // Show the selected phase's table and icons
-  document.getElementById(phase + "-table").style.display = "block";
-  document.getElementById(phase + "-icons").style.display = "block";
+  var table = document.getElementById(phase + "-table");
+  var icons = document.getElementById(phase + "-icons");
+
+  if (table) {
+    table.style.display = "block";
+  }
+
+  if (icons) {
+    icons.style.display = "block";
+  }
 
   // Activate the clicked button and column
   var button = document.querySelector(
     ".dropdown-btn[onclick=\"togglePhase('" + phase + "')\"]"
   );
-  button.classList.add("active");
-  button.closest(".column").classList.add("active");
-  // Scroll to phase1-icons section
-  var iconsSection = document.getElementById("phase1-icons");
+  if (button) {
+    button.classList.add("active");
+    button.closest(".column").classList.add("active");
+  }
+
+  // Scroll to the icons section
+  var iconsSection = document.getElementById(phase + "-icons");
   if (iconsSection) {
     iconsSection.scrollIntoView({ behavior: "smooth", block: "start" });
   }
