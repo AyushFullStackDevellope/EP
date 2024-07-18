@@ -1277,6 +1277,25 @@ h3.hello span {
     object-fit: cover;
   }
 }
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px; /* Adjust this value to increase/decrease the gap between the icons and text */
+}
+
+.icon-img {
+  height: 80px;
+  width: 80px;
+  margin: 0 130px; /* Adjust this value to increase/decrease the gap between the icons */
+}
+.icon-img-2 {
+  height: 80px;
+  width: 80px;
+  margin: 0 80px; /* Adjust this value to increase/decrease the gap between the icons */
+}
+
+
 
 /* General styles */
 :root {
