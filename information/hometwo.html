@@ -32,7 +32,7 @@
     <!-- Aside start -->
     <div class="aside font-family-seconday">
       <div class="logo">
-        <img src="../assets/logo/logo-radius.png" height="140px" width="auto" />
+        <img src="../assets/logo/resized-logo.jpeg" height="140px" width="auto" style="border-radius: 50%;" />
       </div>
       <div class="nav-toggler">
         <span></span>
@@ -347,18 +347,19 @@
                 <div class="content">
                   <div class="content-1">
                     <div class="top-section font-family-seconday">
-                      <h3>Freshers</h3>
+                      <h4>Junior Programmers</h4>
+                      <h5>Crash Course</h5>
                     </div>
                     <div class="fees font-family-seconday">
-                      <p><strong>Fee Structure:</strong> $300</p>
-                    </div>
-                    <div class="details font-family-seconday">
-                      <p><strong>Duration:</strong> 3 months</p>
-                      <p><strong>Prerequisites:</strong> Basics Fundamental programming knowledge</p>
+                      <p><strong>Fee Structure:</strong>₹8,000</p>
+                      <p><strong>Duration:</strong> 2 Months</p>
                     </div>
                   </div>
-                  <div class="cont-2 font-family-seconday">
-                    <button onclick="showPhase('phase1')">Read More →</button>
+                  <div class="cont-2 font-family-seconday" style="margin-top: 100px;">
+                    <button onclick="togglePhase('phase1')" class="dropdown-btn">
+                      <span>Read More </span>
+                      <span class="arrow">▼</span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -368,18 +369,19 @@
                 <div class="content">
                   <div class="content-1">
                     <div class="top-section font-family-seconday">
-                      <h3>Juniour Hats</h3>
+                      <h4>Profession Developer</h4>
+                      <h5>Crash Course</h5>
                     </div>
                     <div class="fees font-family-seconday">
-                      <p><strong>Fee Structure:</strong> $300</p>
-                    </div>
-                    <div class="details font-family-seconday">
+                      <p><strong>Fee Structure:</strong> ₹1.10</p>
                       <p><strong>Duration:</strong> 3 months</p>
-                      <p><strong>Prerequisites:</strong> Basic understanding of programming knowledge</p>
                     </div>
                   </div>
-                  <div class="cont-2 font-family-seconday">
-                    <button onclick="showPhase('phase2')">Read More →</button>
+                  <div class="cont-2 font-family-seconday" style="margin-top: 100px;">
+                    <button onclick="togglePhase('phase2')" class="dropdown-btn">
+                      <span>Read More </span>
+                      <span class="arrow">▼</span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -389,18 +391,19 @@
                 <div class="content">
                   <div class="content-1">
                     <div class="top-section font-family-seconday">
-                      <h3>Juniour</h3>
+                      <h4>Junior Programmer</h3>
+                      <h5>Zero to Full Stack Developer</h4>
                     </div>
                     <div class="fees font-family-seconday">
-                      <p><strong>Fee Structure:</strong> $300</p>
-                    </div>
-                    <div class="details font-family-seconday">
+                      <p><strong>Fee Structure:</strong> ₹1.10 </p>
                       <p><strong>Duration:</strong> 3 months</p>
-                      <p><strong>Prerequisites:</strong> Basic to intermediate programming knowledge</p>
                     </div>
                   </div>
-                  <div class="cont-2 font-family-seconday">
-                    <button onclick="showPhase('phase3')">Read More →</button>
+                  <div class="cont-2 font-family-seconday" style="margin-top: 80px;">
+                    <button onclick="togglePhase('phase3')" class="dropdown-btn">
+                      <span>Read More </span>
+                      <span class="arrow">▼</span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -409,19 +412,20 @@
               <div class="column">
                 <div class="content">
                   <div class="content-1">
-                    <div class="top-section font-family-seconday">
-                      <h3>Seniours</h3>
+                    <div class="top-section font-family-seconday" >
+                      <h4>Junior Programmers</h4>
+                      <h5>Zero to Full Stack Developer to carrier buildup(One- to - One Training)</h5>
                     </div>
                     <div class="fees font-family-seconday">
-                      <p><strong>Fee Structure:</strong> $300</p>
-                    </div>
-                    <div class="details font-family-seconday">
+                      <p><strong>Fee Structure:</strong> ₹1.50</p>
                       <p><strong>Duration:</strong> 3 months</p>
-                      <p><strong>Prerequisites:</strong> Intermediate to advanced programming knowledge </p>
                     </div>
                   </div>
-                  <div class="cont-2 font-family-seconday">
-                    <button onclick="showPhase('phase4')">Read More →</button>
+                  <div class="cont-2 font-family-seconday" style="margin-top: 40px;">
+                    <button onclick="togglePhase('phase4')" class="dropdown-btn">
+                      <span>Read More </span>
+                      <span class="arrow">▼</span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -431,24 +435,127 @@
                 <div class="content">
                   <div class="content-1">
                     <div class="top-section font-family-seconday">
-                      <h3>Veterans</h3>
+                      <h4>Profession Developer</h4>
+                      <h5>Zero to Full Stack Developer</h5>
                     </div>
                     <div class="fees font-family-seconday">
-                      <p><strong>Fee Structure:</strong> $300</p>
+                      <p><strong>Fee Structure:</strong> ₹1.50</p>
+                      <p><strong>Duration:</strong> 3 months</p>
+                    </div>
+                  </div>
+                  <div class="cont-2 font-family-seconday" style="margin-top: 80px;">
+                    <button onclick="togglePhase('phase5')" class="dropdown-btn">
+                      <span>Read More </span>
+                      <span class="arrow">▼</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Phase Vi -->
+              <div class="column">
+                <div class="content">
+                  <div class="content-1">
+                    <div class="top-section font-family-seconday">
+                      <h4>Profession Programmers</h4>
+                      <h5>Zero to Full Stack Developer to carrier buildup(One- to - One Training)</h5>
+                    </div>
+                    <div class="fees font-family-seconday">
+                      <p><strong>Fee Structure:</strong> ₹2.50</p>
                     </div>
                     <div class="details font-family-seconday">
                       <p><strong>Duration:</strong> 3 months</p>
-                      <p><strong>Prerequisites:</strong> Advanced to Master in programming knowledge</p>
                     </div>
                   </div>
                   <div class="cont-2 font-family-seconday">
-                    <button onclick="showPhase('phase5')">Read More →</button>
+                    <button onclick="togglePhase('phase5')" class="dropdown-btn">
+                      <span>Read More </span>
+                      <span class="arrow">▼</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Phase Vii -->
+              <div class="column">
+                <div class="content">
+                  <div class="content-1">
+                    <div class="top-section font-family-seconday">
+                      <h4>Short Internship</h4>
+                    </div>
+                    <div class="fees font-family-seconday">
+                      <p><strong>Duration:</strong> 1 months</p>
+                    </div>
+                  </div>
+                  <div class="cont-2 font-family-seconday" style="margin-top: 185px;">
+                    <button onclick="togglePhase('phase5')" class="dropdown-btn">
+                      <span>Read More </span>
+                      <span class="arrow">▼</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Phase Viii -->
+              <div class="column">
+                <div class="content">
+                  <div class="content-1">
+                    <div class="top-section font-family-seconday">
+                      <h4>Long Internship</h4>
+                    </div>
+                    <div class="details font-family-seconday">
+                      <p><strong>Duration:</strong> 1 months</p>
+                    </div>
+                  </div>
+                  <div class="cont-2 font-family-seconday" style="margin-top: 185px;">
+                    <button onclick="togglePhase('phase5')" class="dropdown-btn">
+                      <span>Read More </span>
+                      <span class="arrow">▼</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Phase ix -->
+              <div class="column">
+                <div class="content">
+                  <div class="content-1">
+                    <div class="top-section font-family-seconday">
+                      <h4>Machine Learning</h4>
+                    </div>
+                    <div class="fees font-family-seconday">
+                      <p><strong>Fee Structure:</strong> $300</p>
+                      <p><strong>Duration:</strong> 3 months</p>
+                    </div>
+                  </div>
+                  <div class="cont-2 font-family-seconday" style="margin-top: 150px;">
+                    <button onclick="togglePhase('phase5')" class="dropdown-btn">
+                      <span>Read More </span>
+                      <span class="arrow">▼</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Phase x -->
+              <div class="column">
+                <div class="content">
+                  <div class="content-1">
+                    <div class="top-section font-family-seconday">
+                      <h4>ROC2 (Robotics)</h4>
+                    </div>
+                    <div class="fees font-family-seconday">
+                      <p><strong>Fee Structure:</strong> $300</p>
+                      <p><strong>Duration:</strong> 3 months</p>
+                    </div>
+                  </div>
+                  <div class="cont-2 font-family-seconday" style="margin-top: 150px;">
+                    <button onclick="togglePhase('phase5')" class="dropdown-btn">
+                      <span>Read More </span>
+                      <span class="arrow">▼</span>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
             <!-- End .main -->
           </div>
+
           <!-- End .course-levels -->
           <!-- Icons for each phase -->
 
@@ -458,46 +565,61 @@
               <!-- Phase I Icons -->
               <div id="phase1-icons" class="icon-row phase-icons" style="display: none;">
                 <!-- Contact section end -->
-                <div class="card"
-                  style="width: 100%; background-color: rgba(0, 0, 0, 0); color: gray; border: solid var(--theme-color); padding: 10px;">
-                  <div class="card-body">
-                    <img src="../assets/images/icons/html-lang.png" alt="" height="40px" style="float: left;">
-                    &emsp;<h3 class="card-title">HTML</h3>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <div class="card" id="card"
+                  style="width: 100%; background-color: rgba(0, 0, 0, 0); color: gray; border: solid rgb(83, 196, 248); padding: 10px; min-height: 80px;">
+                  <div class="card-body" style="display: flex; align-items: center;">
+                    <img src="../assets/images/icons/html-lang.png" alt="" height="40px" style="margin-right: 20px;">
+                    <div style="flex: 1;">
+                      <h3 class="card-title" style="margin: 0;">HTML</h3>
+                      <p class="card-text" style="margin: 0;">With supporting text below as a natural lead-in to
+                        additional content.</p>
+                    </div>
                   </div>
                 </div>
                 <br>
                 <div class="card"
-                  style="width: 100%; background-color: rgba(0, 0, 0, 0); color: gray; border: solid rgb(83, 196, 248); padding: 10px;">
-                  <div class="card-body">
-                    <img src="../assets/images/icons/css-lang.png" alt="" height="40px" style="float: left;">
-                    &emsp;<h3 class="card-title">CSS</h3>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  style="width: 100%; background-color: rgba(0, 0, 0, 0); color: gray; border: solid rgb(83, 196, 248); padding: 10px; min-height: 80px;">
+                  <div class="card-body" style="display: flex; align-items: center;">
+                    <img src="../assets/images/icons/css-lang.png" alt="" height="40px" style="margin-right: 20px;">
+                    <div style="flex: 1;">
+                      <h3 class="card-title" style="margin: 0;">CSS</h3>
+                      <p class="card-text" style="margin: 0;">With supporting text below as a natural lead-in to
+                        additional content.</p>
+                    </div>
                   </div>
                 </div>
                 <br>
                 <div class="card"
-                  style="width: 100%; background-color: rgba(0, 0, 0, 0); color: gray; border: solid rgb(83, 196, 248); padding: 10px;">
-                  <div class="card-body">
-                    <img src="../assets/images/icons/js-lang.png" alt="" height="40px" style="float: left;">
-                    &emsp;&emsp;<h3 class="card-title">JavaScript</h3>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  style="width: 100%; background-color: rgba(0, 0, 0, 0); color: gray; border: solid rgb(83, 196, 248); padding: 10px; min-height: 80px;">
+                  <div class="card-body" style="display: flex; align-items: center;">
+                    <img src="../assets/images/icons/js-lang.png" alt="" height="40px" style="margin-right: 20px;">
+                    <div style="flex: 1;">
+                      <h3 class="card-title" style="margin: 0;">JavaScript</h3>
+                      <p class="card-text" style="margin: 0;">With supporting text below as a natural lead-in to
+                        additional content.</p>
+                    </div>
                   </div>
                 </div>
                 <br>
                 <div class="card"
-                  style="width: 100%; background-color: rgba(0, 0, 0, 0); color: gray; border: solid rgb(83, 196, 248); padding: 10px;">
-                  <div class="card-body">
-                    <img src="../assets/images/icons/manual-testing.png" alt="" height="40px" style="float: left;">
-                    &emsp;<h3 class="card-title">Manual Testing</h3>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  style="width: 100%; background-color: rgba(0, 0, 0, 0); color: gray; border: solid rgb(83, 196, 248); padding: 10px; min-height: 80px;">
+                  <div class="card-body" style="display: flex; align-items: center;">
+                    <img src="../assets/images/icons/manual-testing.png" alt="" height="40px"
+                      style="margin-right: 20px;">
+                    <div style="flex: 1;">
+                      <h3 class="card-title" style="margin: 0;">Manual Testing</h3>
+                      <p class="card-text" style="margin: 0;">With supporting text below as a natural lead-in to
+                        additional content.</p>
+                    </div>
                   </div>
                 </div>
+
                 <!-- <img src="../assets/images/icons/html-lang.png" alt="HTML Icon" class="icon">
                 <img src="../assets/images/icons/css-lang.png" alt="CSS Icon" class="icon">
                 <img src="../assets/images/icons/js-lang.png" alt="JavaScript Icon" class="icon">
                 <img src="../assets/images/icons/manual-testing.png" alt="Manual testing Icon" class="icon"> -->
                 <!-- Add more icons as needed -->
+
               </div>
 
               <!-- Phase II Icons -->
@@ -592,6 +714,58 @@
                   </tr>
                 </tbody>
               </table>
+              <!-- Notes Section -->
+              <div class="container">
+                <div class="row padd-15">
+                  <h3>Prerequisites</h3>
+                </div>
+                <div class="row">
+                  <div class="about-content padd-15" style="color: rgb(112, 112, 112)">
+                    • Students studying below 12th grade <br>
+                    • Basic understanding of computers and internet usage <br>
+                    • Enthusiasm for learning new technologies<br>
+                    • No prior coding experience required<br>
+                  </div>
+                </div>
+              </div>
+              <div class="row padd-15">
+                <h3>Highlight</h3>
+              </div>
+              <div class="row">
+                <div class="about-content padd-15" style="color: rgb(112, 112, 112)">
+                  • Introduction to Programming: Learn the basics of coding using any of beginner-friendly languages
+                  like Java, JavaScript, Python, C, C++, Swift, Ruby<br>
+                  • Interactive Projects: Work on fun and engaging projects to apply what you've learned.<br>
+                  • Problem-Solving Skills: Develop critical thinking and problem-solving abilities through coding
+                  challenges.<br>
+                  • Collaborative Learning: Participate in group activities and peer coding sessions.<br>
+                  • Mentorship: Receive guidance and support from experienced instructors.<br>
+                  • Final Project: Create a final project to showcase your new skills.
+                </div>
+              </div>
+              <!-- End .container -->
+              <div class="container">
+                <div class="row padd-15">
+                  <h3 style="font-size: 40px;">Terms & Conditions</h3>
+                </div>
+                <div class="row">
+                  <div class="about-content padd-15" style="color: rgb(112, 112, 112)">
+
+                    <p>1. The student can ask for a <u>refund within 30 days</u> of payment without any question asked.
+                    </p>
+                    <p>2. The institute needs to refund within 30 days of the refund filled by the students.</p>
+                    <p>3. The institute reserves a right to cancle the admission in case of misbehaviour or incomplete
+                      assignments.</p>
+                    <p>4. In case of completion of level 5, students need to file for a job and the institute needs to
+                      provide interviews to candidates within 180 days. In case of failure students can ask for 50% of
+                      refund of total paid fee.</p>
+                    <p>5. The student cannot roll in institute for any courcse if he cancles or gets terminated for any
+                      of
+                      level or any of course offered by Enjoy Programming.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End .container -->
             </div>
 
             <!-- Phase II Table -->
@@ -872,27 +1046,7 @@
               </table>
             </div>
           </div> <!-- End .phase-tables -->
-          <!-- Notes Section -->
-          <div class="container">
-            <div class="row padd-15">
-              <h3 style="font-size: 40px;">Cancellation & Refund Policy</h3>
-            </div>
-            <div class="row">
-              <div class="about-content padd-15" style="color: rgb(112, 112, 112)">
 
-                <p>1. The student can ask for a <u>refund within 30 days</u> of payment without any question asked.</p>
-                <p>2. The institute needs to refund within 30 days of the refund filled by the students.</p>
-                <p>3. The institute reserves a right to cancle the admission in case of misbehaviour or incomplete
-                  assignments.</p>
-                <p>4. In case of completion of level 5, students need to file for a job and the institute needs to
-                  provide interviews to candidates within 180 days. In case of failure students can ask for 50% of
-                  refund of total paid fee.</p>
-                <p>5. The student cannot roll in institute for any courcse if he cancles or gets terminated for any of
-                  level or any of course offered by Enjoy Programming.</p>
-              </div>
-            </div>
-          </div>
-          <!-- End .container -->
         </div>
       </section>
       <!-- ========= COURSES SECTION END========== -->

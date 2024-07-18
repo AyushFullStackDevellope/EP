@@ -114,63 +114,72 @@ function filterStudents() {
 }
 function closeSlide() {
   // Replace with your logic to close the slide
-  document.getElementById('slideContainer').style.display = 'none';
+  document.getElementById("slideContainer").style.display = "none";
 }
 
 function filterStudents() {
-  const searchInput = document.getElementById('searchInput').value.toLowerCase();
-  const portfolioItems = document.getElementById('portfolioItems').getElementsByClassName('portfolio-item');
+  const searchInput = document
+    .getElementById("searchInput")
+    .value.toLowerCase();
+  const portfolioItems = document
+    .getElementById("portfolioItems")
+    .getElementsByClassName("portfolio-item");
 
   for (let i = 0; i < portfolioItems.length; i++) {
-    const studentName = portfolioItems[i].getAttribute('data-student').toLowerCase();
+    const studentName = portfolioItems[i]
+      .getAttribute("data-student")
+      .toLowerCase();
     if (studentName.includes(searchInput)) {
-      portfolioItems[i].style.display = '';
+      portfolioItems[i].style.display = "";
     } else {
-      portfolioItems[i].style.display = 'none';
+      portfolioItems[i].style.display = "none";
     }
   }
 }
-
-function showPhase(phase) {
+function togglePhase(phase) {
   // Toggle visibility of tables and icons based on the selected phase
-  var tables = document.querySelectorAll('.phase-table');
-  var icons = document.querySelectorAll('.phase-icons');
+  var tables = document.querySelectorAll(".phase-table");
+  var icons = document.querySelectorAll(".phase-icons");
+  var buttons = document.querySelectorAll(".dropdown-btn");
+  var columns = document.querySelectorAll(".column");
 
-  // Hide all tables and icons
+  // Hide all tables and icons and reset buttons and columns
   tables.forEach(function (table) {
-    table.style.display = 'none';
+    table.style.display = "none";
   });
   icons.forEach(function (icon) {
-    icon.style.display = 'none';
+    icon.style.display = "none";
+  });
+  buttons.forEach(function (button) {
+    button.classList.remove("active");
+  });
+  columns.forEach(function (column) {
+    column.classList.remove("active");
   });
 
   // Show the selected phase's table and icons
-  document.getElementById(phase + '-table').style.display = 'block';
-  document.getElementById(phase + '-icons').style.display = 'block';
+  document.getElementById(phase + "-table").style.display = "block";
+  document.getElementById(phase + "-icons").style.display = "block";
 
-  // Scroll to the table on small devices
-  if (window.innerWidth < 768) { // Adjust the breakpoint as per your design needs
-    var tableElement = document.getElementById(phase + '-table');
-    if (tableElement) {
-      tableElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+  // Activate the clicked button and column
+  var button = document.querySelector(
+    ".dropdown-btn[onclick=\"togglePhase('" + phase + "')\"]"
+  );
+  button.classList.add("active");
+  button.closest(".column").classList.add("active");
+  // Scroll to phase1-icons section
+  var iconsSection = document.getElementById("phase1-icons");
+  if (iconsSection) {
+    iconsSection.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
 
 lightbox.option({
-  'resizeDuration': 200,
-  'wrapAround': true,
-  'fadeDuration': 600,
-  'imageFadeDuration': 600,
-  'alwaysShowNavOnTouchDevices': true,
-  'disableScrolling': true,
-  'fitImagesInViewport': true
+  resizeDuration: 200,
+  wrapAround: true,
+  fadeDuration: 600,
+  imageFadeDuration: 600,
+  alwaysShowNavOnTouchDevices: true,
+  disableScrolling: true,
+  fitImagesInViewport: true,
 });
-
-
-
-
-
-
-
-
