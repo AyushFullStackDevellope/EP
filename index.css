@@ -225,10 +225,11 @@ html {
   color: #d3ad00;
   box-shadow: 0 0 24px 0 #0033ff;
 }
-
-
-
-
+.contact:hover,
+.contact:focus {
+  color: #36cc00;
+  box-shadow: 0 0 24px 0 #0e5100;
+}
 
 .button-title-wrapper {
   cursor: se-resize;
