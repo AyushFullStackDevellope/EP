@@ -347,10 +347,6 @@ h3.hello span {
   font-size: 40px;
 }
 
-.typing {
-  color: var(--skin-color);
-}
-
 .home-info p {
   margin-bottom: 70px;
   font-size: 25px;
@@ -1551,10 +1547,11 @@ h3.hello span {
   background-color: white;
   height: 80vh;
 }
-
-.fl-table td,
-.fl-table th {
-  text-align: center;
+.fl-table th{
+  padding: 8px;
+}
+.fl-table td {
+  text-align: left;
   padding: 8px;
 }
 
