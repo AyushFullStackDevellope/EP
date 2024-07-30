@@ -95,19 +95,19 @@ function toggleContent(button) {
 
 // function for search bar
 
-function filterStudents() {
-  const input = document.getElementById("searchInput").value.toLowerCase();
-  const portfolioItems = document.querySelectorAll(".portfolio-item");
+// function filterStudents() {
+//   const input = document.getElementById("searchInput").value.toLowerCase();
+//   const portfolioItems = document.querySelectorAll(".portfolio-item");
 
-  portfolioItems.forEach((item) => {
-    const studentName = item.getAttribute("data-student").toLowerCase();
-    if (studentName.includes(input)) {
-      item.style.display = "block";
-    } else {
-      item.style.display = "none";
-    }
-  });
-}
+//   portfolioItems.forEach((item) => {
+//     const studentName = item.getAttribute("data-student").toLowerCase();
+//     if (studentName.includes(input)) {
+//       item.style.display = "block";
+//     } else {
+//       item.style.display = "none";
+//     }
+//   });
+// }
 function closeSlide() {
   // Replace with your logic to close the slide
   document.getElementById("slideContainer").style.display = "none";
@@ -132,6 +132,10 @@ function filterStudents() {
     }
   }
 }
+
+// certificate search bar 
+
+
 function togglePhase(phase) {
   // Toggle visibility of tables and icons based on the selected phase
   var tables = document.querySelectorAll(".phase-table");
