@@ -1510,14 +1510,11 @@ h3.hello span {
 .btn-info:hover {
   background-color: var(--theme-color);
 }
-
 @media (max-width: 768px) {
   .btn-info {
     display: none;
   }
 }
-
-/* TABLE STYLING  */
 /* TABLE STYLING  */
 body {
   font-family: "Roboto", sans-serif;
@@ -1543,7 +1540,6 @@ body {
   background-color: white;
   padding: 12px 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
 }
 .course-table tr:hover td {
   background-color: #f8f8f8;
@@ -1581,10 +1577,11 @@ body {
 @media screen and (max-width: 576px) {
   .course-table {
     display: block;
-    overflow-x:auto;
+    overflow-x: auto;
     width: 90%;
   }
-  .course-table th, .course-table td {
+  .course-table th,
+  .course-table td {
     font-size: 12px;
     width: 30%;
   }
@@ -1596,9 +1593,8 @@ body {
   .course-table tr {
     width: 50%;
   }
- .course-table tbody {
+  .course-table tbody {
     display: block;
     width: 450px;
   }
-
 }
