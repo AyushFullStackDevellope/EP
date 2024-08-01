@@ -1329,6 +1329,7 @@ h3.hello span {
 
 .column.active {
   border-color: white;
+  box-shadow: var(--theme-color) 5px 5px ;
   /* Change this color to the desired active border color */
 }
 
