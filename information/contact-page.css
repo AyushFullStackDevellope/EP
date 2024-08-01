@@ -14,8 +14,7 @@ body {
 
 .header-container .logo {
   width: 150px;
-  width: 150px;
-  margin: 0 auto;
+  margin-right: 44%;
 }
 
 .back-button {
@@ -43,7 +42,7 @@ body {
   color: #00aaff;
   font-size: 36px;
   margin-bottom: 20px;
-  margin-left: 65px;
+  text-align: center;
 }
 
 .contact .contact-info-item {
@@ -92,7 +91,7 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0   15px;
 }
 
 .row {
