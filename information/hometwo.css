@@ -1289,9 +1289,9 @@ h3.hello span {
 }
 
 .icon-img-2 {
-  height: 80px;
-  width: 80px;
-  margin: 0 80px;
+  height: 55px;
+  width: 55px;
+  margin: 0 80px 20px;
   /* Adjust this value to increase/decrease the gap between the icons */
 }
 
