@@ -354,8 +354,8 @@ h3.hello span {
 }
 
 .home .home-img {
-  flex: 0 0 40%;
-  max-width: 40%;
+  flex: 0 0 35%;
+  max-width: 35%;
   text-align: center;
   position: relative;
 }
