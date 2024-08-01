@@ -309,9 +309,7 @@ html {
       transform: scale(1);
   }
 }
-
-/* background image css */
-#background-image {
+.background-image{
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -320,13 +318,12 @@ html {
   top: 0;
   bottom: 0;
   z-index: -1;
-  background-image: url("./assets/logo/ep-bg-image.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #858585;
 }
-
+/* background image css */
 /* background  video*/
 #background-video.loading {
   display: none;
