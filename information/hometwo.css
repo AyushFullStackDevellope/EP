@@ -353,6 +353,62 @@ h3.hello span {
   color: var(--text-black-900);
 }
 
+.alert-box {
+  flex: 0 0 35%;
+  max-width: 35%;
+  text-align: center;
+  position: relative;
+  border: 5px var(--theme-color) solid;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.alert-box h1 {
+  margin-bottom: 20px;
+  color: var(--theme-color);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.alert {
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.alert-one {
+  background-color: lightgreen;
+  color: #000;
+}
+
+.alert-two {
+  background-color: lightcoral;
+  color: #000;
+}
+
+.alert-three {
+  background-color: lightyellow;
+  color: #000;
+}
+
+.alert-four {
+  background-color: lightblue;
+  color: #000;
+}
+
+.alert a {
+  color: var(--theme-color);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
 .home .home-img {
   flex: 0 0 35%;
   max-width: 35%;
@@ -945,6 +1001,23 @@ h3.hello span {
     top: 10px !important;
     right: 10px !important;
   }
+
+  @media (max-width: 600px) {
+    .alert-box {
+      flex: 0 0 90%;
+      max-width: 90%;
+      padding: 10px;
+    }
+
+    .alert-one,
+    .alert-two,
+    .alert-three {
+      height: auto;
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
 }
 
 .portfolio .pictures-img img {
@@ -1317,6 +1390,11 @@ h3.hello span {
   text-align: center;
 }
 
+.dropdown-btn.active {
+  background-color: #1A9F45;
+  /* Change this to your desired background color */
+}
+
 .dropdown-btn .arrow {
   transition: transform 0.3s;
 }
@@ -1325,11 +1403,13 @@ h3.hello span {
   transform: rotate(180deg);
 }
 
+
 .column.active {
   border-color: white;
-  box-shadow: var(--theme-color) 5px 5px ;
+  box-shadow: var(--theme-color) 5px 5px;
   /* Change this color to the desired active border color */
 }
+
 
 .top-section {
   background-color: #0000000f;
@@ -1412,7 +1492,8 @@ h3.hello span {
 
 .content {
   padding: 15px;
-  flex-grow: 1; /* Ensures this section grows to fill space */
+  flex-grow: 1;
+  /* Ensures this section grows to fill space */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1497,16 +1578,19 @@ h3.hello span {
   font-size: 16px;
   text-transform: uppercase;
 }
+
 .course-table td {
   background-color: white;
   padding: 12px 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   color: #000;
 }
+
 .course-table tr:hover td {
   background-color: #f8f8f8;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
+
 .subheading {
   font-style: italic;
   font-weight: bold;
@@ -1523,11 +1607,12 @@ h3.hello span {
   .course-table {
     font-size: 14px;
   }
-  
+
   .course-table th,
   .course-table td {
     padding: 8px;
   }
+
   .table-container {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -1538,16 +1623,18 @@ h3.hello span {
   .course-table {
     font-size: 12px;
   }
-  
+
   .course-table th,
   .course-table td {
     padding: 6px;
   }
+
   .table-container {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
-  .icon-img-2{
+
+  .icon-img-2 {
     width: 20px;
     height: 20px;
   }

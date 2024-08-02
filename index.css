@@ -333,7 +333,7 @@ html {
 .welcome__subtitle {
   text-align: center;
   font-style: italic;
-  color: #77E4C8;
+  color: #ffffff;
   font-size: 1.5rem;
 }
 
@@ -731,9 +731,7 @@ h2 {
   }
 
   .clickme-image {
-      max-width: 80%;
-      margin-top: 255px;
-      margin-bottom: 0;
+    display: none                                                                                                                                                  ;
   }
 
   .explore-more {
@@ -741,6 +739,9 @@ h2 {
       padding: 8px 16px;
       margin-top: 0;
   }
+  .logo-name {
+    font-size: 28px;
+}
 }
 
 
