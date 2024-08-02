@@ -51,7 +51,7 @@ body {
 }
 
 .contact .contact-info-item p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 25px;
   color: #b0b0b0;
   font-weight: 400;
@@ -81,10 +81,6 @@ body {
 .contact .contact-info-item a {
   text-decoration: none;
   color: inherit;
-}
-
-.padd-15 {
-  padding: 15px;
 }
 
 .container {
@@ -123,13 +119,21 @@ body {
   }
 
   .back-button {
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-bottom: 0;
   }
 
   .section-title h2 {
     font-size: 25px;
     margin: 0%;
+  }
+  .header-container .logo {
+    width: 100px;
+    margin-left: 140px;
+  }
+  .contact-info-item{
+    font-size: 10px;
   }
 }
 
