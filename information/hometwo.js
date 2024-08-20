@@ -5,13 +5,14 @@ const nav = document.querySelector(".nav"),
   allSection = document.querySelectorAll(".section"),
   totalSection = allSection.length;
 
+// Iterate over each nav item and add click event
 for (let i = 0; i < totalNavList; i++) {
   const a = navList[i].querySelector("a");
   a.addEventListener("click", function () {
     removeBackSection();
     for (let j = 0; j < totalNavList; j++) {
       if (navList[j].querySelector("a").classList.contains("active")) {
-        allSection[j]?.classList.add("back-section");
+        addBackSection(j);
       }
       navList[j].querySelector("a").classList.remove("active");
     }
@@ -19,22 +20,23 @@ for (let i = 0; i < totalNavList; i++) {
     showSection(this);
     if (window.innerWidth < 1200) {
       asideSectionTogglerBtn();
-
-      // Close the sidebar when clicking a navbar link
     }
   });
 }
 
+// Remove the back-section class from all sections
 function removeBackSection() {
   for (let i = 0; i < totalSection; i++) {
     allSection[i].classList.remove("back-section");
   }
 }
 
+// Add the back-section class to a specific section
 function addBackSection(num) {
   allSection[num].classList.add("back-section");
 }
 
+// Display the target section and hide others
 function showSection(element) {
   for (let i = 0; i < totalSection; i++) {
     allSection[i].classList.remove("active");
@@ -43,6 +45,7 @@ function showSection(element) {
   document.querySelector("#" + target).classList.add("active");
 }
 
+// Sidebar toggle functionality
 const navTogglerBtn = document.querySelector(".nav-toggler"),
   aside = document.querySelector(".aside");
 
@@ -50,26 +53,24 @@ navTogglerBtn.addEventListener("click", () => {
   asideSectionTogglerBtn();
 });
 
+// Toggle the sidebar open/close state
 function asideSectionTogglerBtn() {
   aside.classList.toggle("open");
   navTogglerBtn.classList.toggle("open");
 }
 
-// JavaScript for navigation functionality
-const navLinks = document.querySelectorAll(".nav a");
-const sections = document.querySelectorAll(".section");
-
+// Handle click events on navigation links
 navLinks.forEach((link) => {
   link.addEventListener("click", function (e) {
     e.preventDefault();
     navLinks.forEach((nav) => nav.classList.remove("active"));
     this.classList.add("active");
-
     const target = document.querySelector(this.getAttribute("href"));
     sections.forEach((section) => section.classList.remove("active"));
     target.classList.add("active");
   });
 });
+
 // JS For Toggle Button Functionality
 function toggleContent(button) {
   const content = button.nextElementSibling;
@@ -94,25 +95,6 @@ function toggleContent(button) {
 }
 
 // function for search bar
-
-// function filterStudents() {
-//   const input = document.getElementById("searchInput").value.toLowerCase();
-//   const portfolioItems = document.querySelectorAll(".portfolio-item");
-
-//   portfolioItems.forEach((item) => {
-//     const studentName = item.getAttribute("data-student").toLowerCase();
-//     if (studentName.includes(input)) {
-//       item.style.display = "block";
-//     } else {
-//       item.style.display = "none";
-//     }
-//   });
-// }
-function closeSlide() {
-  // Replace with your logic to close the slide
-  document.getElementById("slideContainer").style.display = "none";
-}
-
 function filterStudents() {
   const searchInput = document
     .getElementById("searchInput")
@@ -134,16 +116,12 @@ function filterStudents() {
 }
 
 // certificate search bar 
-
-
 function togglePhase(phase) {
-  // Toggle visibility of tables and icons based on the selected phase
   var tables = document.querySelectorAll(".phase-table");
   var icons = document.querySelectorAll(".phase-icons");
   var buttons = document.querySelectorAll(".dropdown-btn");
   var columns = document.querySelectorAll(".column");
 
-  // Hide all tables and icons and reset buttons and columns
   tables.forEach(function (table) {
     table.style.display = "none";
   });
@@ -157,7 +135,6 @@ function togglePhase(phase) {
     column.classList.remove("active");
   });
 
-  // Show the selected phase's table and icons
   var table = document.getElementById(phase + "-table");
   var icons = document.getElementById(phase + "-icons");
 
@@ -169,7 +146,6 @@ function togglePhase(phase) {
     icons.style.display = "block";
   }
 
-  // Activate the clicked button and column
   var button = document.querySelector(
     ".dropdown-btn[onclick=\"togglePhase('" + phase + "')\"]"
   );
@@ -178,13 +154,13 @@ function togglePhase(phase) {
     button.closest(".column").classList.add("active");
   }
 
-  // Scroll to the icons section
   var iconsSection = document.getElementById(phase + "-icons");
   if (iconsSection) {
     iconsSection.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
 
+// Lightbox options
 lightbox.option({
   resizeDuration: 200,
   wrapAround: true,
