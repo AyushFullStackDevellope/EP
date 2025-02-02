@@ -21,42 +21,61 @@
 //   });
 // }
 
-const dayNight = document.querySelector(".day-night");
-dayNight.addEventListener("click", () => {
+document.addEventListener("DOMContentLoaded", () => {
+  const dayNight = document.querySelector(".day-night");
   const icon = dayNight.querySelector("i");
-  icon.classList.toggle("fa-toggle-on");
-  icon.classList.toggle("fa-toggle-off");
-  document.body.classList.toggle("dark");
-});
-
-window.addEventListener("load", () => {
-  const icon = dayNight.querySelector("i");
-  if (document.body.classList.contains("dark")) {
-    icon.classList.remove("fa-toggle-on");
-    icon.classList.add("fa-toggle-off");
-  } else {
-    icon.classList.remove("fa-toggle-on");
-    icon.classList.add("fa-toggle-off");
-  }
-});
-
-document.addEventListener('DOMContentLoaded', () => {
   const colorSwitcherIcon = document.querySelector('.color-switcher i');
   const colorOptions = document.querySelector('.color-options');
   const colorOptionsSpans = document.querySelectorAll('.color-option');
 
-  // Toggle color options visibility
-  colorSwitcherIcon.addEventListener('click', () => {
-    colorOptions.style.display = colorOptions.style.display === 'block' ? 'none' : 'block';
+  // Load saved theme from localStorage
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+      document.body.classList.add("dark");
+      icon.classList.remove("fa-toggle-on");
+      icon.classList.add("fa-toggle-off");
+  } else {
+      document.body.classList.remove("dark");
+      icon.classList.remove("fa-toggle-off");
+      icon.classList.add("fa-toggle-on");
+  }
+
+  // Theme Toggle Functionality
+  dayNight.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      const isDark = document.body.classList.contains("dark");
+
+      if (isDark) {
+          icon.classList.remove("fa-toggle-on");
+          icon.classList.add("fa-toggle-off");
+          localStorage.setItem("theme", "dark");
+      } else {
+          icon.classList.remove("fa-toggle-off");
+          icon.classList.add("fa-toggle-on");
+          localStorage.setItem("theme", "light");
+      }
   });
 
-  // Change theme color
+  // Load saved color theme from localStorage
+  const savedColor = localStorage.getItem("theme-color");
+  if (savedColor) {
+      document.documentElement.style.setProperty('--theme-color', savedColor);
+  }
+
+  // Toggle color options visibility
+  colorSwitcherIcon.addEventListener("click", () => {
+      colorOptions.style.display = colorOptions.style.display === "block" ? "none" : "block";
+  });
+
+  // Change theme color and save to localStorage
   colorOptionsSpans.forEach(span => {
-    span.addEventListener('click', () => {
-      const color = span.getAttribute('data-color');
-      document.documentElement.style.setProperty('--theme-color', color);
-      colorOptions.style.display = 'none';
-    });
+      span.addEventListener("click", () => {
+          const color = span.getAttribute("data-color");
+          document.documentElement.style.setProperty("--theme-color", color);
+          localStorage.setItem("theme-color", color);
+          colorOptions.style.display = "none";
+      });
   });
 });
+
 
