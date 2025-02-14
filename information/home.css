@@ -479,200 +479,6 @@ h3.hello span {
   padding: 15px;
 }
 
-/* about */
-.about .about-content {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-.about .about-content .about-text {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-.about .about-content .about-text h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
-  font-weight: 700px;
-  color: var(--text-black-900);
-}
-
-.about .about-content .about-text h3 span {
-  color: var(--theme-color);
-}
-
-.about .about-content .about-text h3 p {
-  font-size: 12px;
-  line-height: 25px;
-  color: var(--text-black-700);
-}
-
-.about .about-content .personal-info {
-  flex: 0 0 60%;
-  max-width: 60%;
-  margin-top: 40px;
-}
-
-.about .about-content .personal-info .info-item {
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-
-.about .about-content .personal-info .info-item p {
-  font-weight: 600;
-  padding: 10px 0;
-  font-size: 16px;
-  color: var(--text-black-900);
-  border-bottom: 1px solid var(--bg-black-50);
-}
-
-.about .about-content .personal-info .info-item p span {
-  font-weight: 400;
-  color: var(--text-black-700);
-  margin-left: 4px;
-  display: inline-block;
-}
-
-.about .about-content .personal-info .info-item .buttons {
-  margin-top: 30px;
-}
-
-.about .about-content .personal-info .info-item .buttons .btn {
-  margin-top: 10px;
-}
-
-.about .about-content .skills {
-  flex: 0 0 40%;
-  max-width: 40%;
-  margin-top: 40px;
-}
-
-.about .about-content .skills .skill-item {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-.about .about-content .skills .skill-item h5 {
-  line-height: 40px;
-  font-weight: 600;
-  font-size: 16px;
-  color: var(--text-black-900);
-  text-transform: capitalize;
-}
-
-.about .about-content .skills .skill-item .progress {
-  background-color: var(--bg-black-50);
-  height: 7px;
-  border-radius: 4px;
-  width: 100%;
-  position: relative;
-}
-
-.about .about-content .skills .skill-item {
-  margin-bottom: 25px;
-}
-
-.about .about-content .skills .skill-item .progress .progress-in {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  border-radius: 4px;
-  background-color: var(--theme-color);
-}
-
-.about .about-content .skills .skill-item .skill-percent {
-  position: absolute;
-  right: 0;
-  color: var(--text-black-900);
-  top: -40px;
-  font-weight: 400;
-  line-height: 40px;
-}
-
-.about .about-content .education,
-.about .about-content .experience {
-  flex: 0 0 50%;
-  max-width: 50%;
-  margin-top: 30px;
-}
-
-.about .about-content h3.title {
-  font-size: 24px;
-  margin-bottom: 30px;
-  font-weight: 700;
-  color: var(--text-black-900);
-}
-
-.about .about-content .timeline-box {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-.about .about-content .timeline {
-  background-color: var(--bg-black-100);
-  padding: 30px 15px;
-  border-radius: 10px;
-  width: 100%;
-  position: relative;
-}
-
-.about .about-content .timeline .timeline-item {
-  position: relative;
-  padding-left: 37px;
-  padding-bottom: 50px;
-}
-
-.about .about-content .timeline .timeline-item:last-child {
-  padding-bottom: 0;
-}
-
-.about .about-content .timeline .timeline-item::before {
-  content: "";
-  width: 1px;
-  position: absolute;
-  height: 100%;
-  left: 7px;
-  top: 0;
-  background-color: var(--theme-color);
-}
-
-.about .about-content .timeline .circle-dot {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  background-color: var(--theme-color);
-}
-
-.about .about-content .timeline .timeline-date {
-  font-weight: 400;
-  font-size: 14px;
-  margin-bottom: 12px;
-  color: var(--text-black-700);
-}
-
-.about .about-content .timeline .timeline-date .fa {
-  margin-right: 5px;
-}
-
-.about .about-content .timeline .timeline-title {
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 15px;
-  text-transform: capitalize;
-  color: var(--text-black-700);
-}
-
-.about .about-content .timeline .timeline-title {
-  line-height: 25px;
-  font-size: 16px;
-  text-align: justify;
-  color: var(--text-black-700);
-}
-
 /* portfolio sectionn  */
 .portfolio .container {
   padding-bottom: 40px;
@@ -813,44 +619,133 @@ h3.hello span {
 .portfolio .portfolio-item-inner:hover {
   transform: translateY(-10px);
 }
+/* ++++++++++++++++++++++CSS FOR IMAGES+++++++++++++++++++++++++ */
 
-.portfolio .portfolio-img {
-  position: relative;
-  overflow: hidden;
+/* Updated image styles for better Safari compatibility */
+.portfolio .pictures-img img {
+  width: 100%;
+  height: 30vh;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  object-fit: cover;
+  -webkit-object-fit: cover;
 }
 
-/* Default styles for larger screens */
+.group-img {
+  width: 80vw;
+  height: 60vh;
+  object-fit: cover;
+  -webkit-object-fit: cover;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Update portfolio image styles */
 .portfolio .portfolio-img img {
   width: 100%;
   height: 250px;
   object-fit: cover;
+  -webkit-object-fit: cover;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
 }
 
-/* Media query for smaller screens */
+/* Media query updates for Safari compatibility */
 @media (max-width: 768px) {
-  .portfolio .portfolio-img img {
-    height: auto;
-    /* Let the height adjust automatically */
+  .portfolio .pictures-img img {
+    height: 180px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  .group-img {
     width: 100%;
-    /* Ensure the image covers full width */
-    display: block;
-    /* Ensures the image is a block-level element */
+    height: 60vh;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio .pictures-img img {
+    height: auto;
+    max-height: 180px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+/* Certificate image fixes for Safari */
+/* Certificate image base styles */
+.portfolio .certificate-img img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block; /* Prevents inline space issues */
+  max-width: 100%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.portfolio .certificate-img a:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 991px) {
+  .portfolio .certificate-img img {
+    height: 280px;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .portfolio .certificate-img img {
+    height: 240px;
   }
 }
 
 /* Media query for very small devices */
-@media (max-width: 480px) {
-  .portfolio .portfolio-img img {
+@media (max-width: 400px) {
+  .portfolio .certificate-img img {
     height: auto;
-    /* Let the height adjust automatically */
-    width: 100%;
-    /* Ensure the image covers full width */
-    display: block;
-    /* Ensures the image is a block-level element */
-    margin-bottom: 15px;
-    /* Adds spacing between images */
+    min-height: 200px;
+    max-height: 320px;
   }
+
+  .container-certificate {
+    margin: 0 10px;
+  }
+}
+
+/* Certificate container fix */
+.container-certificate {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Lightbox fixes for Safari */
+.lightbox img {
+  max-width: 100%;
+  max-height: 90vh;
+  -webkit-transform: none !important;
+  transform: none !important;
 }
 
 .portfolio .portfolio-img:hover img {
@@ -953,37 +848,6 @@ h3.hello span {
   color: inherit;
 }
 
-.portfolio .certificate-img img {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-  transition: transform 0.3s ease-in-out;
-}
-
-.portfolio .certificate-img a:hover img {
-  transform: scale(1.05);
-}
-
-/* Lightbox2 Custom Styles */
-.lightboxOverlay {
-  background: rgba(0, 0, 0, 0.9) !important;
-}
-
-.lightbox {
-  animation: zoomIn 0.5s ease-in-out;
-}
-
-@keyframes zoomIn {
-  0% {
-    transform: scale(0.7);
-    opacity: 0;
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 
 .lb-close {
   background-color: transparent !important;
@@ -1021,10 +885,10 @@ h3.hello span {
   }
 }
 
+
 .portfolio .pictures-img img {
   width: 100%;
   height: 30vh;
-  /* Changed from fixed height to auto for responsiveness */
   transition: transform 0.3s ease-in-out;
 }
 
