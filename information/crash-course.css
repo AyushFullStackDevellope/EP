@@ -43,7 +43,7 @@ body {
   margin-right: 10px;
 }
 .st-btn{
-    background-color:#3370ff !important;
+    background-color:#2196f3 !important;
     color: rgb(255, 255, 255) !important;
     border: none !important;
 }
@@ -52,7 +52,7 @@ body {
     color: rgb(29, 98, 234) !important;
 }
 .btn-register {
-  background-color: #3370ff;
+  background-color: #2196f3;
   color: white;
   border: none;
   border-radius: 50px;
@@ -134,7 +134,7 @@ body {
   position: absolute;
   top: 20px;
   left: 20px;
-  background-color: #3370ff;
+  background-color: #2196f3;
   border: none !important;
   color: white;
   border: 2px solid white;
@@ -164,7 +164,7 @@ body {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  background-color: #3370ff;
+  background-color: #2196f3;
   color: white;
   border: none;
   border-radius: 50%;
