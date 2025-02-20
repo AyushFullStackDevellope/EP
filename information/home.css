@@ -389,7 +389,7 @@ h3.hello span {
 }
 
 .alert-two {
-  background-color: lightcoral;
+  background-color: rgb(111, 219, 219);
   color: #000;
 }
 
@@ -399,7 +399,7 @@ h3.hello span {
 }
 
 .alert-four {
-  background-color: lightblue;
+  background-color: lightcoral;;
   color: #000;
 }
 

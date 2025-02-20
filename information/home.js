@@ -9,6 +9,20 @@ const nav = document.querySelector(".nav"),
 for (let i = 0; i < totalNavList; i++) {
   const a = navList[i].querySelector("a");
   a.addEventListener("click", function () {
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     removeBackSection();
     for (let j = 0; j < totalNavList; j++) {
       if (navList[j].querySelector("a").classList.contains("active")) {
@@ -115,7 +129,7 @@ function filterStudents() {
   }
 }
 
-// certificate search bar 
+// certificate search bar
 function togglePhase(phase) {
   var tables = document.querySelectorAll(".phase-table");
   var icons = document.querySelectorAll(".phase-icons");
