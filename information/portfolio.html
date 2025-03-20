@@ -80,11 +80,11 @@
             <h2 style="margin-top: 60px">Portfolio</h2>
           </div>
           <!-- Search bar start -->
-          <div class="search-box">
+          <!-- <div class="search-box">
             <button class="btn-search"><i class="fas fa-search"></i></button>
             <input type="text" class="input-search" id="searchInput" placeholder=" Search Students..."
               onkeyup="filterStudents()" />
-          </div>
+          </div> -->
           <!-- Search bar end -->
         </div>
 
@@ -748,6 +748,44 @@
                 <div class="company">
                   <a href="https://laxman-telange.github.io/Portfolio/">
                     Visit Laxman's portfolio
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                      <path fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!--******************************** Portfolio item end ***************************** -->
+            <!--************************* Portfolio item start************************** -->
+            <div class="card" data-category="published" data-student="Divya Bondre">
+              <div class="card-header">
+                <img src="../assets/images/student/ep-divya.jpeg" alt="Profile" class="profile-img">
+              </div>
+              <div class="card-body">
+                <h3>Divya Bondre</h3>
+                <p>BSC 3rd yr </p>
+                <p>Nabira Mahavidyalaya Katol </p>
+                <p>Katol, Maharashtra ,India.</p>
+                <div class="company">
+                  <a href="https://www.linkedin.com/in/divya-bondre-23a330321/" target="_blank">
+                    Linkedin Profile
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                      <path fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="company">
+                  <a href="https://divyafullstackdeveloper.github.io/myPortfolio/#Home">
+                    Visit Divya's portfolio
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
                       <path fill-rule="evenodd"
@@ -1773,12 +1811,12 @@
                 </div>
               </div>
               <!--******************************** Portfolio item end ***************************** -->
-              
+
             </div>
             <!-- Repeat for other cards -->
           </div>
+          <h2 style="text-align: center;">And many more....</h2>
         </div>
-        <h2 style="text-align: center;" >And many more....</h2> 
       </section>
       <!-- Portfolio section end -->
 
@@ -1812,20 +1850,20 @@
       <!-- Portfolio JavaScript -->
       <script>
         // Search functionality
-        function filterStudents() {
-          const searchInput = document.getElementById("searchInput");
-          const filter = searchInput.value.toUpperCase();
-          const portfolioItems = document.querySelectorAll(".card");
+        // function filterStudents() {
+        //   const searchInput = document.getElementById("searchInput");
+        //   const filter = searchInput.value.toUpperCase();
+        //   const portfolioItems = document.querySelectorAll(".card");
 
-          portfolioItems.forEach((item) => {
-            const studentName = item.getAttribute("data-student").toUpperCase();
-            if (studentName.indexOf(filter) > -1) {
-              item.style.display = "";
-            } else {
-              item.style.display = "none";
-            }
-          });
-        }
+        //   portfolioItems.forEach((item) => {
+        //     const studentName = item.getAttribute("data-student").toUpperCase();
+        //     if (studentName.indexOf(filter) > -1) {
+        //       item.style.display = "";
+        //     } else {
+        //       item.style.display = "none";
+        //     }
+        //   });
+        // }
       </script>
     </div>
     <!-- Main content end -->
