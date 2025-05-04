@@ -15,21 +15,26 @@
   animation: slideOut 0.1s ease;
 
 }
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
 
-/* webpage background video */
 #background-video {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-
 }
 
+/* Hide video initially until we determine which one to show */
+.video-source {
+  display: none;
+}
 /* h1 css */
 h1 {
   padding: 0;
@@ -70,8 +75,7 @@ h3 {
   cursor: cell;
   font-size: 11px;
   letter-spacing: 1px;
-  background-color: rgba(211, 33, 33, 0.7);
-  color: #ff0000;
+  background-color: rgb(22 25 60 / 70%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -132,7 +136,7 @@ html {
 /* svg icon */
 .svg--icon {
   width: 100%;
-  max-width: 5rem;
+  max-width: 5rem;  
   height: 100%;
   max-height: 5rem;
   display: block;
@@ -482,6 +486,17 @@ html {
   .hamburger-menu.open .bar:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
   }
+  #background-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
 }
 
 
@@ -610,46 +625,182 @@ h3 {
   transform: scaleX(1);
 }
 
-/* click me container */
-.clickme-container {
+/* Interactive Robot Section - Main Container */
+.interactive-robot-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  margin: 30rem 0;
+  padding: 0 20px;
+}
+
+/* Robot Content Container */
+.robot-content-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Robot Feature */
+.robot-feature {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Robot Interactive Link */
+.robot-interactive-link {
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.25s ease-out;
+}
+
+.robot-interactive-link:hover {
+  transform: scale(1.05);
+}
+
+.robot-interactive-link:active {
+  transform: scale(0.98);
+}
+
+/* Robot Animated Container */
+.robot-animated-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Robot GIF */
+.robot-gif {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  z-index: 5;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* Robot Glow Effect */
+.robot-glow-effect {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background: rgba(122, 215, 255, 0.15);
+  box-shadow: 0 0 20px rgba(56, 182, 255, 0.5);
+  z-index: 4;
+  animation: glow 2.5s infinite ease-in-out;
+}
+
+@keyframes glow {
+
+  0%,
+  100% {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+
+/* Explore More Container */
+.explore-more-container {
   width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
-/* click me gif image */
-.clickme-image {
-  cursor: pointer;
-  max-width: 100%;
-  height: 230px;
-  margin-bottom: 0;
-  margin-top: 60%;
-}
-
-/* explore more */
-.explore-more {
-  cursor: pointer;
-  font-size: 16px;
-  background-color: #151b206e;
-  width: 100vw;
-  height: 70px;
+/* Explore More Button */
+.explore-more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #3a6186, #89253e);
   color: white;
   border: none;
-  border-radius: 5px;
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  position: fixed;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* explore more hover */
-.explore-more:hover {
-  background-color: #151b20b1;
+.explore-more-btn:hover {
+  background: linear-gradient(to right, #89253e, #3a6186);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Arrow Down Animation */
+.arrow-down {
+  animation: bobbing 1.5s infinite ease-in-out;
+}
+
+@keyframes bobbing {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .robot-content-container {
+    max-width: 400px;
+  }
+
+  .robot-gif {
+    width: 100px;
+  }
+
+  .robot-glow-effect {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .robot-content-container {
+    max-width: 300px;
+  }
+
+  .robot-gif {
+    width: 90px;
+  }
+
+  .robot-glow-effect {
+    width: 100px;
+    height: 100px;
+  }
+
+  .explore-more-btn {
+    width: 90%;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
 }
 
 /* h1 css */

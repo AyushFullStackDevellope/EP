@@ -5,36 +5,31 @@
   <!-- meta for divise size -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- title -->
-  <title>enjoyprogramming.com</title>
+  <title>youngengineerslab.com</title>
   <!-- favicon -->
-  <link rel="icon" type="image/x-icon" href="./assets/logo/logo-radius.png" />
+  <link rel="icon" type="image/x-icon" href="./assets/logo/new-logo-radius.png" />
   <!-- css styling -->
   <link rel="stylesheet" href="index.css" />
 </head>
 
-<body>  
+<body>
   <!-- Logo and header section -->
   <header class="header">
     <!-- Company logo image -->
-    <img src="./assets/logo/resized-logo.jpeg" style="height: 110px; width: 110px; border-radius: 50%"
-      alt="Enjoy Programming Logo" />
+    <img src="./assets/logo/new-logo.png" style="height: 110px; width: 110px; border-radius: 50%" alt="Logo" />
     <!-- Company name -->
-    <span class="logo-name"> Enjoy Programming</span>
+    <span class="logo-name">Young Engineer's Lab</span>
   </header>
-
-  <!-- Main heading section -->
+  <!-- 
   <section class="main-heading">
-    <!-- Main title with custom styling -->
     <h3 class="gradient-type">
       Welcome To The World Of Information Technology
     </h3>
 
-    <!-- Subtitle describing the company -->
     <p class="welcome__subtitle">
       A genuine IT training institute with professional industrial trainers
     </p>
-
-  </section>
+  </section> -->
 
   <!-- Mobile navigation menu icon (hamburger menu) -->
   <nav class="mobile-nav">
@@ -45,7 +40,6 @@
     </div>
   </nav>
 
-  <!-- TODO: Implement contact button next to "Enjoy Programming" with collapse functionality -->
   <!-- Sidebar container -->
   <div class="sidebar" id="menu-icon">
     <!-- SVG definitions for social media icons -->
@@ -156,20 +150,37 @@
           <span class="clip">Linkedin</span>
         </a>
       </div>
-      <p class="welcome__subtitle" style="font-size: 11px">Version#1.1.4</p>
+      <p class="welcome__subtitle" style="font-size: 11px">Version#2.1.1</p>
     </div>
   </div>
-  <!-- "Click Me" GIF button -->
-  <a href="information/home.html" class="clickme-container">
-    <!-- Animated GIF for the "Click Me" button -->
-    <footer>
-      <img src="./assets/animations/robot.gif" alt="Click Me" class="clickme-image" />
-      <!-- Footer section -->
 
-      <!-- "Explore More" button within the footer -->
-      <button class="explore-more">Explore More</button>
-    </footer>
-  </a>
+  <!-- Robot Animation Section -->
+
+  <!-- Interactive Robot Section -->
+  <div class="interactive-robot-section">
+    <!-- Main content container for proper positioning -->
+    <div class="robot-content-container">
+      <!-- Robot animation with clickable area -->
+      <div class="robot-feature">
+        <a href="information/home.html" class="robot-interactive-link">
+          <div class="robot-animated-container">
+            <img src="./assets/animations/robot.gif" alt="Interactive Robot Assistant" class="robot-gif" />
+            <div class="robot-glow-effect"></div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Explore More button -->
+      <!-- <div class="explore-more-container">
+        <a href="information/home.html" class="robot-interactive-link">
+        <button class="explore-more-btn">
+          <span>Explore More</span>
+        </button>
+        </a>
+      </div> -->
+    </div>
+  </div>
+
 
   <!-- Background image container (fallback for video) -->
   <div id="background-image">
@@ -178,10 +189,14 @@
   </div>
 
   <!-- Background video -->
-  <video id="background-video" autoplay loop muted class="loaded">
-    <!-- Video source -->
-    <source src="./assets/videos/ep-video-bg.mp4" type="video/mp4" />
-  </video>
+  <div class="video-container">
+    <video id="background-video" autoplay muted playsinline>
+      <source class="video-source desktop-video" src="./assets/videos/new-bg-video.mp4" type="video/mp4">
+      <source class="video-source mobile-video" src="./assets/videos/new-bg-mobile.mp4" type="video/mp4">
+      <!-- Fallback text if video doesn't load -->
+      Your browser does not support the video tag.
+    </video>
+  </div>
   <!-- SCRIPTING -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -231,8 +246,12 @@
       // Call handleResize initially to set the correct state
       handleResize();
 
-      // Add event listener for window resize to ensure responsiveness
-      window.addEventListener("resize", handleResize);
+      // Check if device is mobile
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        // Change video source for mobile
+        document.getElementById('background-video').querySelector('source').src = './assets/videos/new-bg-mobile.mp4';
+        document.getElementById('background-video').load();
+      }
     });
   </script>
 </body>
