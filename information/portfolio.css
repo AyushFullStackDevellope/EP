@@ -128,7 +128,7 @@
 
 .card-header {
   position: relative;
-  background: url("https://media.licdn.com/dms/image/v2/D4D16AQHz7xYXFpPsMA/profile-displaybackgroundimage-shrink_350_1400/B4DZWswlTxH4Ag-/0/1742360173433?e=1747872000&v=beta&t=kNuDh2w5qpyk5w2GZSyIFYIdO6hy5INnJ6GYb5v8ynw") no-repeat center/cover;
+  background: url("../assets/logo/bg-banner.jpg") no-repeat center/cover;
   height: 80px;
 }
 
@@ -191,4 +191,4 @@
   width: 16px;
   height: 16px;
   margin-left: 4px;
-}
+} 
